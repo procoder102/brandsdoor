@@ -84,6 +84,10 @@ function toggleButton(e:React.MouseEvent<HTMLButtonElement>){
   }
 }
 const popoverRef = useRef<HTMLDivElement>(null);
+// const [scrollPosition, setScrollPosition] = useState(0);
+// window.addEventListener('scroll',() =>{
+//     setScrollPosition(window.screenY)
+//   })
 useEffect(() => {
   function handileClickOutSide (event:MouseEvent) {
     if(popoverRef.current && !popoverRef.current.contains(event.target as Node)){
@@ -92,12 +96,14 @@ useEffect(() => {
   }
   document.addEventListener('click', handileClickOutSide);
   return () => {
-    document.removeEventListener('click',handileClickOutSide)
+    document.removeEventListener('click',handileClickOutSide);
   };
+
+  
 },[]);
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" className="mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="bg-[#1b1b1b]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -121,11 +127,11 @@ useEffect(() => {
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
           
 
-          <Link href="/" className="text-sm/6 font-semibold text-gray-900">
-            Home
+          <Link href="/" className=" text-sm/6 font-semibold text-gray-900">
+            <span className='text-white'>Home</span>
           </Link>
           <Popover className="relative " >
-            <PopoverButton name='about'  className=" cursor-pointer flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" onClick={toggleButton}>
+            <PopoverButton name='about'  className=" text-white cursor-pointer flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" onClick={toggleButton}>
               About us
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
@@ -158,7 +164,7 @@ useEffect(() => {
           </Popover>
           
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='service'  onClick={toggleButton}>
+            <PopoverButton className="flex text-white items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='service'  onClick={toggleButton}>
               Our Solution
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
@@ -192,7 +198,7 @@ useEffect(() => {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='news' onClick={toggleButton}>
+            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='news' onClick={toggleButton}>
               The News
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
@@ -227,7 +233,7 @@ useEffect(() => {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='sms' onClick={toggleButton}>
+            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='sms' onClick={toggleButton}>
               BULK SMS
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
@@ -262,7 +268,7 @@ useEffect(() => {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='portfolio' onClick={toggleButton}>
+            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='portfolio' onClick={toggleButton}>
               Our Portfolio
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
@@ -296,7 +302,7 @@ useEffect(() => {
             </Transition>
           </Popover>
 
-          <Link href="#" className="text-sm/6 font-semibold text-gray-900">
+          <Link href="#" className="text-white text-sm/6 font-semibold text-gray-900">
             Contact US
           </Link>
         </PopoverGroup>

@@ -7,13 +7,13 @@ export default function AboutUs(){
     <div className=''>
       <section className="p-30">
         <div className="flex flex-col md:flex-row  justify-between" >
-          <div className='w-1/2'>
+          <div className='w-full md:w-1/2'>
             <h1 className='text-center font-bold text-3xl'>THE BRANDS DOOR</h1>
             <p className='pt-3 font-samibold font-serif text-center text-gray-500'>
               The essence of The Brands Door is to thrive together in business with their clients. We are a trustworthy vendor for a vast number of clients. We ensure that our clients get what they want. We work closely with a range of clients from different sectors and regions across the nation. We at The Brands Door have certified experts and employs with advanced technologies delivering top-notch digital commerce solutions. We aid businesses in finding suitable candidates and workforce who could be an asset to the company. We are also involved into state-of-the-art web design & development to empower you to grow with flawless ease. Doesn’t matter whether you are startup with a small projector an, enterprise needing an agile development team.
             </p>
           </div>
-          <div className='w-1/3'>
+          <div className='w-full md:w-1/3'>
               <Image src={gifFile} unoptimized={true} alt='...' />
           </div>
         </div>

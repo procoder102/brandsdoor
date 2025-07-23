@@ -19,6 +19,27 @@ import years from '../Images/image.png'
 import devlopers from '../Images/image (3).png'
 import global from '../Images/image (2).png'
 import costEffective from '../Images/image (1).png'
+import img04 from '../Images/Website Designing Company in Noida, Web_files/04.jpg'
+import img06 from '../Images/Website Designing Company in Noida, Web_files/06.jpg'
+import img07 from '../Images/Website Designing Company in Noida, Web_files/07.jpg'
+import img08 from '../Images/Website Designing Company in Noida, Web_files/08.jpg'
+import img09 from '../Images/Website Designing Company in Noida, Web_files/09.jpg'
+import img10 from '../Images/Website Designing Company in Noida, Web_files/12.jpg'
+import img11 from '../Images/Website Designing Company in Noida, Web_files/16.jpg'
+import img12 from '../Images/Website Designing Company in Noida, Web_files/17.jpg'
+import img13 from '../Images/Website Designing Company in Noida, Web_files/20.jpg'
+import img14 from '../Images/Website Designing Company in Noida, Web_files/21.jpg'
+import img15 from '../Images/Website Designing Company in Noida, Web_files/26.jpg'
+
+
+
+
+
+
+
+
+
+
 import { GoGraph } from "react-icons/go";
 import { FcDocument } from "react-icons/fc";
 import { FaTasks } from "react-icons/fa";
@@ -110,7 +131,7 @@ const buldInfo = [
 
         {imgMapping.map((item,index) =>(
           <div  key={index} className="my-3 ">
-              <Image className="lg:w-20 lg:h-10 my-3 mx-auto" src={item.name} alt="..." />
+              <Image className="lg:w-auto lg:h-10 my-3 mx-auto" src={item.name} alt="..." />
               <h1 className="py-3 text-xl font-medium text-blue-500 text-center">{item.label}</h1>
           </div>
         ) )}
@@ -211,6 +232,41 @@ const buldInfo = [
           <h1 className="text-center underline font-black text-4xl text-orange-300">
             Our Awesome Client
           </h1>
+          <div className="carousel carousel-center  rounded-box  space-x-4 p-6">
+            <div className="carousel-item">
+              <Image alt="" src={img04} height={300}  />
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img06} height={300} />
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img07} height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img08} height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img09}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img10}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img11}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img12}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img13}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img14}  height={300}/>
+            </div>
+            <div className="carousel-item">
+              <Image alt="" src={img15}  height={300}/>
+            </div>
+          </div>
         </div>
         <section className="bg-[#F5EEF8] border border-gray-200 rounded-lg shadow-lg ">
         <div className=" flex flex-col md:flex-row justify-evenly p-20 " >
@@ -227,7 +283,7 @@ const buldInfo = [
               <div className="my-10">
               <h1 className="underline font-black text-center text-2xl">SHOWCASING OUR EXPERTISE</h1>
               <p className="text-center text-4xl text-gray-500 pt-10">MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
-      <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>
+              <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>
             </div>
             </section>
     </div>

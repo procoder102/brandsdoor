@@ -5,15 +5,15 @@ import iconW from '../../Images/icon-web-design-20.jpg'
 export default function AboutUs(){
   return (
     <div className=''>
-      <section className="p-30">
-        <div className="flex flex-col md:flex-row  justify-between" >
-          <div className='w-full md:w-1/2'>
+      <section className="p-10 md:p-20 lg:p-30">
+        <div className="flex flex-col-reverse md:flex-row  justify-between" >
+          <div className='w-full md:w-1/2 pt-20 lg:pt-0'>
             <h1 className='text-center font-bold text-3xl'>THE BRANDS DOOR</h1>
             <p className='pt-3 font-samibold font-serif text-center text-gray-500'>
               The essence of The Brands Door is to thrive together in business with their clients. We are a trustworthy vendor for a vast number of clients. We ensure that our clients get what they want. We work closely with a range of clients from different sectors and regions across the nation. We at The Brands Door have certified experts and employs with advanced technologies delivering top-notch digital commerce solutions. We aid businesses in finding suitable candidates and workforce who could be an asset to the company. We are also involved into state-of-the-art web design & development to empower you to grow with flawless ease. Doesn’t matter whether you are startup with a small projector an, enterprise needing an agile development team.
             </p>
           </div>
-          <div className='w-full md:w-1/3'>
+          <div className='w-full md:w-1/3 pt-30 lg:pt-0'>
               <Image src={gifFile} unoptimized={true} alt='...' />
           </div>
         </div>
@@ -29,12 +29,12 @@ export default function AboutUs(){
         <h1 className='pt-5 font-bold'>PURPOSEFUL FUNCTION</h1>
         <p className='pt-3'>Our products are designed to make life healthier, safer, easier, and more beautiful while contributing to the efficient use of water and the sustainable development of society.</p>
       </section>
-      <section className=''>
-        <div className='flex'>
-          <div>
+      <section >
+        <div className='flex flex-col md:flex-row  lg:flex-row md:justify-around'>
+          <div className='mx-auto'>
             <Image src={iconW}  alt='...' />
           </div>
-          <div>
+          <div className='p-10  md:py-20'>
             <h1>Green Innovation</h1>
             <p>Green – new products and technologies which provide customer and business value but significantly decrease environmental impacts.</p>
           </div>

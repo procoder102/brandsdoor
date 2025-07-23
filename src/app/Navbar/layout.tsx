@@ -40,7 +40,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 const About = [
   {name:'About US', description:'',href:'/about',icon: UserGroupIcon},
-  {name:'Privacy Policy',description:'',href:'/privacyPolicy',icon: DocumentCheckIcon}
+  {name:'Privacy Policy',description:'',href:'/privacy-policy',icon: DocumentCheckIcon}
 ]
 
 
@@ -61,10 +61,10 @@ const portfolio = [
 ]
 
 const services = [
-  {name:'Desig & Developement',description:'',href:'',icon:GlobeAltIcon},
+  {name:'Design & Developement',description:'',href:'/design',icon:GlobeAltIcon},
   {name:'search Engine Optimization',description:'',href:'',icon:GlobeAltIcon},
   {name:'social media marketing',description:'',href:'',icon:PencilIcon},
-  {name:'google ads',description:'',href:'',icon:GlobeAltIcon},
+  {name:'google ads',description:'',href:'/googleAds',icon:GlobeAltIcon},
   {name:'social media ads',description:'',href:'',icon:PencilIcon},
   {name:'graphic design',description:'',href:'',icon:PaintBrushIcon},
   {name:'video editon',description:'',href:'',icon:VideoCameraIcon},
@@ -100,7 +100,7 @@ useEffect(() => {
   };
 
   
-},[]);
+});
   return (
     <header className="bg-white" ref={popoverRef}>
       <nav aria-label="Global" id='Navbar' className="bg-[#1b1b1b]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">

@@ -68,8 +68,8 @@ export default function Imagecardcrousal({Crousal1,Crousal3,Crousal4}:props)  {
                 </div>
             </div>
         </div>
-        <div className="flex justify-center">
-            <button onClick={prevSlide} className="px-3 bottom-0 top-70  left-[110vh] right-3 object-cover" name="prev">
+        <div className="flex lg:justify-center">
+            <button onClick={prevSlide} className="lg:px-3 bottom-0 top-70  left-[110vh] right-3 object-cover" name="prev">
             <MdOutlineNavigateNext className=" rotate-180 text-2xl text-black  rounded-full cursour-pointer bg-gray-300" />
         </button>
         <button onClick={nextSlide} className=" bottom-0 top-70   right-[105vh] object-cover">

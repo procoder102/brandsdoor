@@ -62,13 +62,11 @@ const portfolio = [
 
 const services = [
   {name:'Design & Developement',description:'',href:'/design',icon:GlobeAltIcon},
-  {name:'search Engine Optimization',description:'',href:'',icon:GlobeAltIcon},
-  {name:'social media marketing',description:'',href:'',icon:PencilIcon},
-  {name:'google ads',description:'',href:'/googleAds',icon:GlobeAltIcon},
+  {name:'search Engine Optimization',description:'',href:'/serch-engine-optimization',icon:GlobeAltIcon},
+  {name:'social media marketing',description:'',href:'/social-media-marketing',icon:PencilIcon},
+  {name:'google ads',description:'',href:'/google-ads',icon:GlobeAltIcon},
   {name:'social media ads',description:'',href:'',icon:PencilIcon},
-  {name:'graphic design',description:'',href:'',icon:PaintBrushIcon},
-  {name:'video editon',description:'',href:'',icon:VideoCameraIcon},
-  {name:'content writing',description:'',href:'',icon:PencilSquareIcon}
+  {name:'content writing',description:'',href:'/content-writing',icon:PencilSquareIcon}
 ]
 
 
@@ -103,7 +101,7 @@ useEffect(() => {
 });
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" id='Navbar' className="bg-[#1b1b1b]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="bg-[#031726]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -165,7 +163,7 @@ useEffect(() => {
           
           <Popover className="relative">
             <PopoverButton className="flex text-white items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='service'  onClick={toggleButton}>
-              Our Solution
+              Our Services
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 

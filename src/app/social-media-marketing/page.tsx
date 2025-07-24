@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import googleAdd from '../../Images/googleAdd.jpg'
 import img04 from '../../Images/Website Designing Company in Noida, Web_files/04.jpg'
 import img06 from '../../Images/Website Designing Company in Noida, Web_files/06.jpg'
 import img07 from '../../Images/Website Designing Company in Noida, Web_files/07.jpg'
@@ -12,14 +11,25 @@ import img13 from '../../Images/Website Designing Company in Noida, Web_files/20
 import img14 from '../../Images/Website Designing Company in Noida, Web_files/21.jpg'
 import img15 from '../../Images/Website Designing Company in Noida, Web_files/26.jpg'
 import google from '../../Images/Google.jpg'
+import socialMarketing from '../../Images/socialmediaMarketing.gif'
 import facebook from '../../Images/facebook.jpg';
 import youtube from '../../Images/youtube.jpg'
+import instagram from '../../Images/instagram.jpg'
+import linkedin from '../../Images/linkedin.jpg';
+import socialMedia from '../../Images/socialMedia.jpg'
+import mail from '../../Images/mail.jpg';
+import video from '../../Images/video.gif'
+import graphic from '../../Images/graphics.jpg';
 
 export default function Google() {
   return (
     <section>
         <div className='pt-20'>
-            <div className="flex flex-col-reverse lg:flex-row ">
+          <div>
+            <Image src={socialMarketing} className='relative' alt='...' />
+            <button type='button' className='duration-300 ease-[cubic-bezier(0.95,0.05,0.795,0.035)]. absolute top-35 left-5 md:top-50 md:left-30 lg:top-70 lg:left-50 bg-orange-500 text-white font-bold object-cover rounded-full hover:cursor-pointer  px-5 md:px-8 lg:px-20 py-1'>Contact us</button>
+          </div>
+            {/* <div className="flex flex-col-reverse lg:flex-row ">
                 <div className="bg-blue-300 lg:w-[50%] p-10 py-30">
                     <h1 className='text-center text-2xl  font-black text-white'>Build your company’s website to grow your business</h1>
                     <p className='lg:p-5 text-center text-white '>With millions of websites on the web you want to make sure your company’s website stands out, represents you well and helps you grow.</p>
@@ -31,8 +41,8 @@ export default function Google() {
                 <div className='lg:w-[50%]'>
                     <Image src={googleAdd} alt='...' className='h-100 lg:h-[40vw]' />
                 </div>
-            </div>
-            <section className='Marketing lg:p-20'>
+            </div> */}
+            <section className='Marketing lg:p-10'>
                 <h1 className='text-4xl font-bold text-center'>Our Performance Marketing Clients</h1>
                 <p className="text-center  p-10 lg:px-35">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
                 <div className="flex justify-around flex-col lg:flex-row">
@@ -86,31 +96,35 @@ export default function Google() {
             <section className='p-10'>
                 <div className='grid grid-cols-3 gap-10'>
                     <div className=''>
-                        <Image src={google} className='border rounded-xl' alt='...' />
-                        <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Google Ads</h1>
-                    </div>
-                    <div className=''>
-                        <Image src={facebook} className='border rounded-xl' alt='...' />
+                        <Image src={facebook} className='border rounded-xl h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>facebook Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={youtube} className='border rounded-xl w-100 h-65' alt='...' />
+                        <Image src={youtube} className='border rounded-xl h-[19vw] w-100 h-65' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>youtube Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={google} className='border rounded-xl' alt='...' />
+                        <Image src={instagram} className='border rounded-xl h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Instagram Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={google} className='border rounded-xl' alt='...' />
+                        <Image src={linkedin} className='border rounded-xl h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>LinkedIn Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={google} className='border rounded-xl' alt='...' />
+                        <Image src={socialMedia} className='border rounded-xl h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Social media Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={google} className='border rounded-xl' alt='...' />
+                        <Image src={graphic} className='border rounded-xl h-[19vw]' alt='...' />
+                        <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Graphic Designs</h1>
+                    </div>
+                    <div className=''>
+                        <Image src={video} className='border rounded-xl h-[19vw]' alt='...' />
+                        <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Video Editing</h1>
+                    </div>
+                    <div className=''>
+                        <Image src={mail} className='border rounded-xl h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl'>Mail Marketing Services</h1>
                     </div>
                 </div>

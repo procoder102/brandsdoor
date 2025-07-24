@@ -5,6 +5,11 @@
 /* .container{
   padding:20em;
 } */
+ .lg\:flex-1 {
+    @media (width >= 64rem) {
+      flex: 1;
+    }
+  }
 
 @theme inline {
   --font-sans: var(--font-geist-sans);

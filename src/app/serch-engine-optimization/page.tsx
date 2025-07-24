@@ -1,47 +1,29 @@
-import Image from 'next/image'
-import designdevlop from '../../Images/design&devlop.gif'
-import Cardbanner from '@/components/Cardbanner/page'
+import Image from "next/image"
+import serchEngine from "../../Images/searchEngineOpt.gif"
+import Cardbanner from "@/components/Cardbanner/page"
 
-export default function Design() {
-
-  
-  const designDevlopment = [
-    {title:'Static Website Design & Devlopment',
-    body:'We believe every customer is different and has different needs, either they own a startup company or a well established business. At thebrandsdoor our Job is to identify...',
+export default function Serchengine() {
+    const designDevlopment = [
+    {title:'Off Page Optimization',
+    body:'Off-page optimization is a part of Search Engine Optimization (SEO) which includes those activities which indirectly help in the online promotion of a website in search engines. All these activities help in...',
     url:'/',
     linkName:'Learn More'
   },
-    {title:'Dynamic Website Design & Devlopment',
-    body:'We believe every customer is different and has different needs, either they own a startup company or a well established business. At thebrandsdoor our Job is to identify...',
+    {title:'On Page Optimization',
+    body:'On-Page optimization is an important part of Search Engine Optimization campaign. If on-page optimization of a website is done carefully, then you will have good chance of getting a high search engine ranking.',
     url:'/',
     linkName:'Learn More'
   },
-    {title:'E-Commerce Pletform',
-    body:`In this day and age assuming you need your internet based presence to develop and you need your interest group to know you well then you should be exceptionally... `,
+    {title:'Content Optimization',
+    body:`Words can create; words can destroy; words can borne revolution; words express ideas and emotions. If the right words are not used it can lead to miscommunication...`,
     url:'/',
     linkName:'Learn More'
   },
-    {title:'Custmize Web Design',
-    body:'It is really effortless to install any Open Source product, select a particular free theme and start adding content / logo.',
-    url:'/',
-    linkName:'Learn More'
-  },
-    {title:'Software Devlopment',
-    body:'As a Growing Software Development Company in India, Skynet Technologies provide fully featured and customized software Web Development Services...',
-    url:'/',
-    linkName:'Learn More'
-  },
-    {title:'Application Devlopment',
-    body:'As a Growing Application Development Company in India, Skynet Technologies provide fully featured and customized Application Web Development Services...',
-    url:'/',
-    linkName:'Learn More'
-  },
-
-  ]
+]
   return (
-    <section className="pt-20">
+    <section className='pt-20'>
       <div className='h-75'>
-        <Image src={designdevlop} alt='banner' className='h-75' />
+        <Image src={serchEngine} alt='banner' className='h-75' />
       </div>
       <section className='Marketing lg:p-10'>
         <h1 className='text-4xl font-bold text-center'>Our Performance Marketing Clients</h1>
@@ -58,15 +40,14 @@ export default function Design() {
         </div>
       </section>
       <section>
-        <div className="grid grid-flow-col grid-rows-3 gap-10">
-          {designDevlopment.map((item) =>
-          <div key={item.title} className='flex justify-center'> 
-          <Cardbanner  Title={item.title} Body={item.body} link={item.url} linkname={item.linkName} />
-          </div>
-          )}
-        </div>
-      </section>
-
+              <div className="grid grid-flow-col grid-rows-1 gap-10">
+                {designDevlopment.map((item) =>
+                <div key={item.title} className='flex justify-center'> 
+                <Cardbanner  Title={item.title} Body={item.body} link={item.url} linkname={item.linkName} />
+                </div>
+                )}
+              </div>
+            </section>
     </section>
   )
 }

@@ -51,8 +51,5 @@ export default function Requestcard () {
     </div>
   
 </div>
-
-        
-    
-  )
+)
 }

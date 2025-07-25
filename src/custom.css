@@ -1,3 +1,8 @@
-.paraColor > p{
-    color: #2b2a2ad1;
+
+
+@media (prefers-color-scheme:dark) {
+  .paraColor > p {
+    color: white;
+  }
 }
+

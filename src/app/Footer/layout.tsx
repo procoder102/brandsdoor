@@ -11,11 +11,11 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className='bg-black p-0 m-0'>
+    <div className='bg-black dark:bg-[#121212] dark:border dark:border-t-white p-0 m-0'>
     <div className='flex flex-col md:flex-row lg:flex-row justify-evenly'>
-        <div className='w-full md:w-60 lg:w-60 h-auto p-0 lg:px-5 lg:pb-10'>
+        <div className='w-full md:w-60 lg:w-65 h-auto p-0 lg:px-5 lg:pb-10'>
             <Image className='' src={Logo} alt='logo' />
-                        <p className='text-white sm:text-xl text-start  font-samibold'>The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day.</p>
+                        <p className='text-white  text-start  '>The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day.</p>
         </div>
         <div className='w-full md:w-60 lg:w-60 p-0 md:p-5 lg:pt-15 text-center'>
             <h1 className='text-white sm:text-xl font-light text-xl'>Find Us</h1>

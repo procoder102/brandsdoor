@@ -12,10 +12,10 @@ export default function Content(){
             <button type='button' className='duration-300 ease-[cubic-bezier(0.95,0.05,0.795,0.035)]. absolute top-35 left-5 md:top-50 md:left-30 lg:top-70 lg:left-50 bg-orange-500 text-white font-bold object-cover rounded-full hover:cursor-pointer  px-5 md:px-8 lg:px-20 py-1'>Contact us</button>
           </div>
           <div className="p-10">
-            <h1 className="text-2xl font-bold">Content Writing</h1>
-            <p className="pt-5">{contentBody}</p>
-            <h2 className="pt-10 text-xl font-bold">Services in Content Writing</h2>
-            <ul className="pt-5">
+            <h1 className="text-2xl font-bold dark:text-white">Content Writing</h1>
+            <p className="pt-5 dark:text-white">{contentBody}</p>
+            <h2 className="pt-10 text-xl font-bold dark:text-white">Services in Content Writing</h2>
+            <ul className="pt-5 dark:text-white">
                 <li>• Process driving approaches</li>
                 <li>• Creative Writing</li>
                 <li>• Blogs</li>
@@ -24,7 +24,7 @@ export default function Content(){
                 <li>• Creative Social Media Posts</li>
                 <li>• You Tube Video Description</li>
             </ul>
-            <p>What are you waiting for? Join us for wonderful content creation with Your Digital Friend, The Brand’s Door...</p>
+            <p className="dark:text-white">What are you waiting for? Join us for wonderful content creation with Your Digital Friend, The Brand’s Door...</p>
           </div>
           <Requestcard />
     </div>

@@ -88,9 +88,9 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
     const behavioralRemarketing = `We may use remarketing services to advertise on third party websites to you after you visited our Service. We and our third-party vendors use cookies to inform, optimise and serve ads based on your past visits to our Service.`
     return (
-    <section className='pt-30 lg:pt-20 font-[Open_Sans]'>
+    <section className='pt-20 lg:pt-20 font-[Open_Sans] dark:text-[#E4E4E4]'>
         <div className="p-10 lg:p-25">
-            <div  className='paraColor'>
+            <div  className='paraColor dark:text-[#E4E4E4]'>
                 <h2 className='text-2xl font-bold font-[helvetica]'>WELCOME TO THE BRANDS DOOR PVT LTD.</h2>
                 <p className='pt-5'>{companyP}</p>
                 <p>{priv}</p>

@@ -101,7 +101,7 @@ useEffect(() => {
 });
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" id='Navbar' className="bg-[#031726]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="bg-[#031726] dark:bg-[#121212]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -300,7 +300,7 @@ useEffect(() => {
             </Transition>
           </Popover>
 
-          <Link href="#" className="text-white text-sm/6 font-semibold text-gray-900">
+          <Link href="/contactUS" className="text-white text-sm/6 font-semibold text-gray-900">
             Contact US
           </Link>
         </PopoverGroup>

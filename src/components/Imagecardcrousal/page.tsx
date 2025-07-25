@@ -27,14 +27,14 @@ export default function Imagecardcrousal({Crousal1,Crousal3,Crousal4}:props)  {
 
   return (
     <div className='relative  top-0 w-full  lg:h-auto overflow-hidden'>
-        <div className='flex transition-transformation duration-300 m-10 h-full' style={{transform:`translateX(-${currentSlide * 100}%)`}}>
-            <div className='w-full flex-shrink-0 h-full flex flex-col md:flex-row'>
-                <div className="w-full md:w-[50%]">
+        <div className='flex  transition-transformation duration-300 m-10 h-full' style={{transform:`translateX(-${currentSlide * 100}%)`}}>
+            <div className='w-full  flex-shrink-0 h-full flex flex-col md:flex-row'>
+                <div className="w-full lg:w-[50%] h-auto lg:h-[350px]">
                 <Image src={Crousal1} alt="..." className="w-[100%] h-auto" />
                 </div>
-                <div className="w-full md:w-[50%] p-10">
-                    <h3 className="font-bold text-center">An eCommerce Website for Apparels and Accessories</h3>
-                    <p className="text-center">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
+                <div className="w-full lg:w-[50%] p-10">
+                    <h3 className="font-bold text-center dark:text-[#E4E4E4]">An eCommerce Website for Apparels and Accessories</h3>
+                    <p className="text-center dark:text-[#E4E4E4]">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
                     <div className="flex justify-evenly m-2">
                         <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Red</button>
                         <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Light</button>
@@ -42,12 +42,12 @@ export default function Imagecardcrousal({Crousal1,Crousal3,Crousal4}:props)  {
                 </div>
             </div>
             <div className='w-full flex-shrink-0 h-full flex flex-col md:flex-row'>
-                <div className="w-[50%]">
+                <div className="w-full lg:w-[50%] h-auto lg:h-[350px]">
                 <Image src={Crousal3} alt="..." className="w-[100%] h-auto" />
                 </div>
-                <div className="w-[50%] p-10">
-                    <h3 className="font-bold text-center">An eCommerce Website for Apparels and Accessories</h3>
-                    <p className="text-center">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
+                <div className="w-full lg:w-[50%] p-10">
+                    <h3 className="font-bold text-center dark:text-[#E4E4E4]">An eCommerce Website for Apparels and Accessories</h3>
+                    <p className="text-center dark:text-[#E4E4E4]">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
                     <div className="flex justify-evenly m-2">
                         <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Red</button>
                         <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Light</button>
@@ -55,12 +55,12 @@ export default function Imagecardcrousal({Crousal1,Crousal3,Crousal4}:props)  {
                 </div>
             </div>
             <div className='w-full flex-shrink-0 h-full flex flex-col md:flex-row'>
-                <div className="w-[50%] h-[350px]">
+                <div className="w-full lg:w-[50%] h-auto lg:h-[350px]">
                 <Image src={Crousal4} alt="..." className="w-[100%] h-auto" />
                 </div>
-                <div className="w-[50%] p-10">
-                    <h3 className="font-bold text-center">An eCommerce Website for Apparels and Accessories</h3>
-                    <p className="text-center">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
+                <div className="w-full lg:w-[50%] p-10">
+                    <h3 className="font-bold text-center dark:text-[#E4E4E4]">An eCommerce Website for Apparels and Accessories</h3>
+                    <p className="text-center dark:text-[#E4E4E4]">The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day</p>
                     <div className="flex justify-evenly m-2">
                         <button type="button" className="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Red</button>
                         <button type="button" className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Light</button>
@@ -68,11 +68,11 @@ export default function Imagecardcrousal({Crousal1,Crousal3,Crousal4}:props)  {
                 </div>
             </div>
         </div>
-        <div className="flex lg:justify-center">
-            <button onClick={prevSlide} className="lg:px-3 bottom-0 top-70  left-[110vh] right-3 object-cover" name="prev">
+        <div className="flex justify-center">
+            <button onClick={prevSlide} className="px-3 top-0 lg:top-70  left-[110vh] right-3 object-cover" name="prev">
             <MdOutlineNavigateNext className=" rotate-180 text-2xl text-black  rounded-full cursour-pointer bg-gray-300" />
         </button>
-        <button onClick={nextSlide} className=" bottom-0 top-70   right-[105vh] object-cover">
+        <button onClick={nextSlide} className=" lg:top-70 top-0  right-[105vh] object-cover">
             <MdOutlineNavigateNext className="text-2xl text-black  rounded-full bg-gray-300" />
         </button>
         </div>

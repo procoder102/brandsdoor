@@ -106,26 +106,33 @@ const buldInfo = [
   {icon:IoMdCheckboxOutline,name:'IVR'},
 ]
 
+const imgCrousal = [
+  {image:Image1,description:''},
+  {image:Image2,description:''},
+  {image:Image3,description:''}
+
+]
+
 
   return (
     <div>
       <Customcrousal Crousal1={Crousal2} Crousal3={Crousal3} Crousal4={Crousal4}/>
-      <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 bg-[#cbebeb]">
+      <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 dark:border dark:border-b-white">
         <div className="w-[100%]  lg:w-[50%]">
-          <h1 className="text-2xl font-black p-2">WE GROW YOUR BUSINESS ONLINE</h1>
-          <p className="p-1 text-sm font-samibold">On average we have halped business increase revenue by 90% Yoy.See what we can do for you.</p>
-          <p className="p-1 text-xs font-samibold">After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
+          <h1 className="dark:text-[#E4E4E4] text-2xl font-black p-2 ">WE GROW YOUR BUSINESS ONLINE</h1>
+          <p className="dark:text-[#E4E4E4] p-1 text-lg font-samibold">On average we have halped business increase revenue by 90% Yoy.See what we can do for you.</p>
+          <p className="dark:text-[#E4E4E4] p-1 text-lg font-samibold">After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
         </div>
         <div className="p-1 flex flex-col justify-between  lg:w-[36%] ">
-            <input type="text" id="first_name" className="bg-gray-50 my-10 lg:my-0 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
-          <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            <input type="text" id="first_name" className="dark:text-white bg-gray-50 my-10 lg:my-0 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+          <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#B39CD0] dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
             LET US GROW YOUR BUSINESS
             </button>
         
         </div>
       </div>
       <div>
-        <h1 className="font-bold text-center text-4xl m-10">Our <span className="text-orange-500">Service</span><br /><span className="text-lg text-gray-500">Our DigitalMarketing Services</span></h1>
+        <h1 className="dark:text-white font-bold text-center text-4xl m-10">Our <span className="text-orange-500">Service</span><br /><span className="dark:text-white text-lg text-gray-500">Our DigitalMarketing Services</span></h1>
       </div>
       <div className="flex flex-col lg:flex-row justify-evenly container">
 
@@ -150,15 +157,15 @@ const buldInfo = [
           ))}
         </div>
       </div>
-      <div className="container mx-auto  mt-20">
-        <h1 className="text-center text-2xl font-black">Why choose digital marketing <br />services for Online Business?</h1>
-        <p className="text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is essentially a full-service Digital Marketing Agency. Based in Noida, the company was established in the year 2012. Later in 2014, at its core, The Brands Door Digital strongly supports and follows the mission of Digital India laid down by Prime Minister Shri. Narstartra Modi and provides cost-effective branding solutions for start-ups in India.</p>
+      <div className="container mx-auto  mt-20 dark:border dark:border-b-white">
+        <h1 className="dark:text-white text-center text-2xl font-black">Why choose digital marketing <br />services for Online Business?</h1>
+        <p className="dark:text-white text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is essentially a full-service Digital Marketing Agency. Based in Noida, the company was established in the year 2012. Later in 2014, at its core, The Brands Door Digital strongly supports and follows the mission of Digital India laid down by Prime Minister Shri. Narstartra Modi and provides cost-effective branding solutions for start-ups in India.</p>
       </div>
-      <div className="container mx-auto  mt-20">
-        <h1 className="text-center text-2xl font-black">Why the Brands Doors</h1>
-        <p className="text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt. It is one of the frontrunners in the IT Industry, based in Noida, India. We are accredited with CMMI Level-3 certification. The Brands Door has been recognized as one of the prominent name among well-known IT companies. We are a perfect runway for those who desire intensely to fortify their brand presence in today’s cut-throat competitive age. The Brands Door establish their thrilling presence in 4 + years in digital commerce, web design & development, Digital Marketing.</p>
+      <div className="container mx-auto  mt-20 dark:border dark:border-b-white">
+        <h1 className="dark:text-white text-center text-2xl font-black">Why the Brands Doors</h1>
+        <p className="dark:text-white text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt. It is one of the frontrunners in the IT Industry, based in Noida, India. We are accredited with CMMI Level-3 certification. The Brands Door has been recognized as one of the prominent name among well-known IT companies. We are a perfect runway for those who desire intensely to fortify their brand presence in today’s cut-throat competitive age. The Brands Door establish their thrilling presence in 4 + years in digital commerce, web design & development, Digital Marketing.</p>
       </div>
-      <div className="grid my-10  grid-flow-col grid-rows-5 lg:grid-rows-3 gap-10 ps-20">
+      <div className="grid my-10  grid-flow-col grid-rows-5 lg:grid-rows-3 gap-10 ps-20 dark:border dark:border-b-white">
        {whatWeProvide.map((item) =>
       <div className="flex flex-col lg:flex-row" key={item.srno}>
         <Image className="" src={item.icon} alt="..." />
@@ -168,20 +175,20 @@ const buldInfo = [
       </div>
       )}
       </div>
-      <div className="mt-30">
-        <h1 className="text-center text-4xl font-bold">Let us grow your business</h1>
-        <p className="text-center text-xl text-gray-500">Best Digital Service in Delhi-NCR</p>
-        <div className="grid grid-flow-col grid-rows-4 gap-x-8 my-10 mx-[20%]">
+      <div className="mt-30 dark:border dark:border-b-white">
+        <h1 className="dark:text-white text-center text-4xl font-bold">Let us grow your business</h1>
+        <p className="dark:text-white text-center text-xl text-gray-500">Best Digital Service in Delhi-NCR</p>
+        <div className="grid grid-flow-col grid-rows-8 md:grid-rows-4 gap-x-8 my-10 mx-[20%]">
           {buldInfo.map((item) =>
           <div key={item.name} className="flex">
               <item.icon className="mt-1 font-black text-4xl lg:text-xl text-orange-500" />
-            <p className="ps-3">{item.name}</p>
+            <p className="dark:text-white ps-3">{item.name}</p>
           </div>
           )}
         </div>
       </div>
-      <div className="block lg:flex p-0 lg:p-20 bg-[#f2f2f2]">
-        <div className="">
+      <div className="block lg:flex p-0 lg:p-20 bg-[#f2f2f2] rounded-lg shadow-lg ">
+        <div className="rounded-lg shadow-lg ">
           <Image src={logo} alt="..." className="w-200 h-full"/>
         </div>
         <div className="">
@@ -280,9 +287,10 @@ const buldInfo = [
         </div>
             </section>
             <section className="">
-              <div className="my-10">
-              <h1 className="underline font-black text-center text-2xl">SHOWCASING OUR EXPERTISE</h1>
-              <p className="text-center text-4xl text-gray-500 pt-10">MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
+              <div className="my-10 ">
+              <h1 className="underline font-black text-center text-2xl dark:text-[#E4E4E4]">SHOWCASING OUR EXPERTISE</h1>
+              <p className="text-center text-4xl text-gray-500 pt-10 dark:text-[#E4E4E4]">MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
+              
               <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>
             </div>
             </section>

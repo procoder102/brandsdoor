@@ -28,13 +28,13 @@ We will create a short and sweet content with attractive and catchy taglines whi
   };
     return (
     <section className="pt-20">
-        <div className='m-20'>
+        <div className='m-5 md:m-20'>
             <h1 className="text-2xl font-bold dark:text-white">BULK SMS SERVICES</h1>
-            <p className="pt-5 dark:text-white">{bulkSms}</p>
+            <p className="pt-5 dark:text-[#fefde7]">{bulkSms}</p>
             <h1 className="text-2xl font-bold pt-10 dark:text-white">SEND SMS TO NO. OF PEOPLE IN BULK</h1>
-            <p className="pt-5 dark:text-white">{sendSMS}</p>
+            <p className="pt-5 dark:text-[#fefde7]">{sendSMS}</p>
             <h1 className="text-2xl font-bold pt-10 dark:text-white">BEST SUPPORT</h1>
-            <p className='pt-5 dark:text-white '>{bestSupport}</p>
+            <p className='pt-5 dark:text-[#fefde7] '>{bestSupport}</p>
         </div>
         <div className='m-5 lg:m-20'>
             <h1 className="text-2xl font-bold py-5 dark:text-white">FREQUENTLY ASKED QUESTIONS?</h1>

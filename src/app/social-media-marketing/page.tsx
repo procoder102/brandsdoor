@@ -20,6 +20,7 @@ import socialMedia from '../../Images/socialMedia.jpg'
 import mail from '../../Images/mail.jpg';
 import video from '../../Images/video.gif'
 import graphic from '../../Images/graphics.jpg';
+import Requestcard from '../../components/Requestcard/page';
 
 export default function Google() {
   return (
@@ -44,7 +45,7 @@ export default function Google() {
             </div> */}
             <section className='Marketing lg:p-10'>
                 <h1 className='text-4xl font-bold text-center dark:text-white'>Our Performance Marketing Clients</h1>
-                <p className="text-center  p-10 lg:px-35 dark:text-white">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
+                <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
                 <div className="flex justify-around flex-col lg:flex-row">
                     <h1 className="text-4xl font-bold text-blue-500 text-center">100+ <span className="font-light text-black text-sm dark:text-white"><br />Total Website Traffic</span></h1>
                     <h1 className="text-4xl font-bold text-blue-500 text-center">10 CR+<span className="font-light text-black text-sm dark:text-white"><br />Ecommerce Transaction</span></h1>
@@ -94,42 +95,43 @@ export default function Google() {
                     </div>
             </section>
             <section className='p-10'>
-                <div className='grid grid-cols-3 gap-10'>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
                     <div className=''>
-                        <Image src={facebook} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={facebook} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>facebook Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={youtube} className='border rounded-xl h-[19vw] w-100 h-65' alt='...' />
+                        <Image src={youtube} className='border rounded-xl h-auto lg:h-[19vw] w-100 h-65' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>youtube Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={instagram} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={instagram} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>Instagram Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={linkedin} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={linkedin} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>LinkedIn Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={socialMedia} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={socialMedia} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>Social media Ads</h1>
                     </div>
                     <div className=''>
-                        <Image src={graphic} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={graphic} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>Graphic Designs</h1>
                     </div>
                     <div className=''>
-                        <Image src={video} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={video} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>Video Editing</h1>
                     </div>
                     <div className=''>
-                        <Image src={mail} className='border rounded-xl h-[19vw]' alt='...' />
+                        <Image src={mail} className='border rounded-xl h-auto lg:h-[19vw]' alt='...' />
                         <h1 className='pt-5 text-center font-bold font-[Open_Sans] font-serif text-2xl dark:text-white'>Mail Marketing Services</h1>
                     </div>
                 </div>
             </section>
         </div>
+        <Requestcard />
     </section>
   )
 }

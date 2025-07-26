@@ -41,7 +41,7 @@ export default function Google() {
       </div>
       <section className='Marketing lg:p-10'>
         <h1 className='text-4xl font-bold text-center dark:text-white'>Our Performance Marketing Clients</h1>
-        <p className="text-center  p-10 lg:px-35 dark:text-white">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
+        <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
         <div className="flex justify-around flex-col lg:flex-row">
           <h1 className="text-4xl font-bold text-blue-500 text-center">100+ <span className="font-light text-black text-sm dark:text-white"><br />Total Website Traffic</span></h1>
           <h1 className="text-4xl font-bold text-blue-500 text-center">10 CR+<span className="font-light text-black text-sm dark:text-white"><br />Ecommerce Transaction</span></h1>
@@ -94,7 +94,7 @@ export default function Google() {
       <div className="">
         <h1 className="text-2xl font-bold text-blue-500 text-center">Our Google Ads Services In India</h1>
       </div>
-      <div className="py-10 mx-0 lg:mx-0 md:mx-50 grid grid-flow-row grid-rows-3 lg:grid-flow-col  lg:grid-rows-3 gap-10">
+      <div className="py-10 mx-5 lg:mx-0 md:mx-50 grid grid-flow-row grid-rows-3 lg:grid-flow-col  lg:grid-rows-3 gap-10">
         {googleAddsService.map((item)=>
         <div key={item.label} className="card bg-base-100 w-96 shadow-sm">
            <figure><Image src={item.icon} className="w-30 h-30 mx-auto py-2" alt="..." /></figure> 

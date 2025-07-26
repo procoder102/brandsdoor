@@ -13,9 +13,9 @@ export default function Content(){
           </div>
           <div className="p-10">
             <h1 className="text-2xl font-bold dark:text-white">Content Writing</h1>
-            <p className="pt-5 dark:text-white">{contentBody}</p>
+            <p className="pt-5 dark:text-[#fefde7]">{contentBody}</p>
             <h2 className="pt-10 text-xl font-bold dark:text-white">Services in Content Writing</h2>
-            <ul className="pt-5 dark:text-white">
+            <ul className="pt-5 dark:text-[#fefde7]">
                 <li>• Process driving approaches</li>
                 <li>• Creative Writing</li>
                 <li>• Blogs</li>
@@ -24,7 +24,7 @@ export default function Content(){
                 <li>• Creative Social Media Posts</li>
                 <li>• You Tube Video Description</li>
             </ul>
-            <p className="dark:text-white">What are you waiting for? Join us for wonderful content creation with Your Digital Friend, The Brand’s Door...</p>
+            <p className="dark:text-[#fefde7]">What are you waiting for? Join us for wonderful content creation with Your Digital Friend, The Brand’s Door...</p>
           </div>
           <Requestcard />
     </div>

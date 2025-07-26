@@ -32,7 +32,7 @@ export default function Footer() {
             <ImYoutube2 className='text-white sm:text-xl' />
             <FaSquareInstagram className='text-white sm:text-xl' />
             </div>
-            <p className='text-white sm:text-xl text-center pt-5'>+91-9818752056 <br /> +91-9718358080 <br /> info@thebrandsdoor.com</p>
+            <p className='text-white sm:text-xl text-center pt-5 hidden'>+91-9818752056 <br /> +91-9718358080 <br /> info@thebrandsdoor.com</p>
         </div>
         <div className='w-full md:w-60 lg:w-60 p-0 md:p-5 lg:pt-15'>
             <h1 className='text-white sm:text-xl font-light text-xl text-center'>Welcome</h1>

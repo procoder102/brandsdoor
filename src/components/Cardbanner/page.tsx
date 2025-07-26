@@ -12,10 +12,10 @@ export default function Cardbanner({Title,Body,link,linkname}:props) {
     <div>
         <div className="card card-border bg-base-100 w-96">
   <div className="card-body">
-    <h2 className="card-title">{Title}</h2>
+    <h2 className="card-title dark:text-[#a28400]">{Title}</h2>
     <p>{Body}</p>
     <div className="card-actions justify-end">
-      <Link href={link} className="btn btn-primary" >{linkname}</Link>
+      <Link href={link} className="btn btn-primary dark:bg-[#f10402]" >{linkname}</Link>
     </div>
   </div>
 </div>

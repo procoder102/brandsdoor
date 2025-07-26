@@ -6,12 +6,12 @@ export default function Serchengine() {
     const designDevlopment = [
     {title:'Off Page Optimization',
     body:'Off-page optimization is a part of Search Engine Optimization (SEO) which includes those activities which indirectly help in the online promotion of a website in search engines. All these activities help in...',
-    url:'/',
+    url:'/serch-engine-optimization/offPage',
     linkName:'Learn More'
   },
     {title:'On Page Optimization',
     body:'On-Page optimization is an important part of Search Engine Optimization campaign. If on-page optimization of a website is done carefully, then you will have good chance of getting a high search engine ranking.',
-    url:'/',
+    url:'/serch-engine-optimization/onPage',
     linkName:'Learn More'
   },
     {title:'Content Optimization',
@@ -27,7 +27,7 @@ export default function Serchengine() {
       </div>
       <section className='Marketing lg:p-10'>
         <h1 className='text-4xl font-bold text-center dark:text-white'>Our Performance Marketing Clients</h1>
-        <p className="text-center  p-10 lg:px-35 dark:text-white">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
+        <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
         <div className="flex justify-around flex-col lg:flex-row">
           <h1 className="text-4xl font-bold text-blue-500 text-center">100+ <span className="font-light text-black text-sm dark:text-white"><br />Total Website Traffic</span></h1>
           <h1 className="text-4xl font-bold text-blue-500 text-center">10 CR+<span className="font-light text-black text-sm dark:text-white"><br />Ecommerce Transaction</span></h1>
@@ -40,7 +40,7 @@ export default function Serchengine() {
         </div>
       </section>
       <section>
-              <div className="grid grid-flow-col grid-rows-1 gap-10 my-5">
+              <div className="grid grid-flow-col grid-rows-3 lg:grid-rows-1 gap-10 my-5">
                 {designDevlopment.map((item) =>
                 <div key={item.title} className='flex justify-center'> 
                 <Cardbanner  Title={item.title} Body={item.body} link={item.url} linkname={item.linkName} />

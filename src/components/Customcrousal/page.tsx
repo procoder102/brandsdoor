@@ -13,37 +13,44 @@ type props ={
 export default function Customcrousal({Crousal1,Crousal3,Crousal4}:props)  {
 
 
-    const [currentSlide, setCurrentSlide] = useState(0)
-    const totalSlides =3;
-
-    const nextSlide = () => {
-        setCurrentSlide((pev) => (pev +1) % totalSlides)
-    };
-
-    const prevSlide = () => {
-        setCurrentSlide((pev) => (pev - 1 + totalSlides) % totalSlides);
-    };
-
-
   return (
-    <div className='relative  top-0 w-full h-[100vw] lg:h-auto overflow-hidden'>
-        <div className='flex transition-transformation duration-300 h-full' style={{transform:`translateX(-${currentSlide * 100}%)`}}>
-            <div className='w-full flex-shrink-0 h-full'>
-                <Image src={Crousal1} alt="..." className="w-[100%] h-[100%]" />
-            </div>
-            <div className='w-full flex-shrink-0 h-full'>
-                <Image src={Crousal3} alt="..." className="w-[100%] h-[100%]" />
-            </div>
-            <div className='w-full flex-shrink-0 h-full'>
-                <Image src={Crousal4} alt="..." className="w-[100%] h-[100%]" />
-            </div>
-        </div>
-        <button onClick={prevSlide} className="absolute top-1/2 left-0 right-3" name="prev">
-            <MdOutlineNavigateNext className="rotate-180 text-6xl text-white" />
-        </button>
-        <button onClick={nextSlide} className="absolute top-1/2  right-3">
-            <MdOutlineNavigateNext className="text-6xl text-white" />
-        </button>
+    <div className="carousel w-full">
+  <div id="slide1" className="carousel-item relative w-full h-[28vw]">
+    <Image
+      src={Crousal1}
+      alt="..."
+      className="w-full" />
+    
+  </div>
+  <div id="slide2" className="carousel-item relative w-full h-[28vw]">
+    <Image
+    src={Crousal3}
+      alt="..."
+      className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide1" className="btn btn-circle">❮</a>
+      <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
-  )
+  </div>
+  <div id="slide3" className="carousel-item relative w-full h-[28vw]">
+    <Image
+    src={Crousal4}
+      alt="..."
+      className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide2" className="btn btn-circle">❮</a>
+      <a href="#slide4" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+  <div id="slide4" className="carousel-item relative w-full h-[28vw]">
+    <Image
+    src={Crousal1}
+      alt="..."
+      className="w-full" />
+    <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+      <a href="#slide3" className="btn btn-circle">❮</a>
+      <a href="#slide1" className="btn btn-circle">❯</a>
+    </div>
+  </div>
+</div>  )
 }

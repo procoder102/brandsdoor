@@ -25,19 +25,19 @@ export default function Email() {
     
     return (
     <section className='pt-20'>
-        <div className='m-20'>
+        <div className='m-5 md:m-20'>
         <h1 className="text-2xl font-bold dark:text-white">Email Marketing Solutions</h1>
         <h3 className="text-xl font-bold dark:text-white">Reach thousands of your customers instantly with our email marketing campaigns.</h3>
-        <p className="pt-5 dark:text-white">{emailMarketing}</p>
+        <p className="pt-5 dark:text-[#fefde7]">{emailMarketing}</p>
         <h1 className='text-2xl font-bold pt-10 dark:text-white'>Custom Newsletter Service</h1>
-        <p className="pt-5 dark:text-white">{customNews}</p>
-        <ul className='list-disc p-10 dark:text-white'>
+        <p className="pt-5 dark:text-[#fefde7]">{customNews}</p>
+        <ul className='list-disc p-10 dark:text-[#fefde7]'>
             {customNewsObject.map((item,index)=>
             <li className='font-bold' key={index}>{item.label}</li>
             )}
         </ul>
-        <p className='whitespace-pre-wrap dark:text-white'><span className='text-xl font-bold'>In letting us handle your email campaign </span>{campaign}</p>
-            <ul className='list-disc p-10 dark:text-white'>
+        <p className='whitespace-pre-wrap dark:text-[#fefde7]'><span className='text-xl font-bold'>In letting us handle your email campaign </span>{campaign}</p>
+            <ul className='list-disc p-10 dark:text-[#fefde7]'>
                 {campaignObject.map((item,index)=> 
                 <li className='pt-1' key={index}>{item.li}</li>
                 )}

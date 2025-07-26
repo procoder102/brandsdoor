@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import dynamic from 'next/dynamic'
 
+
 const Navbar = dynamic(() => import('./Navbar/layout'),{
 })
 
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[#121212]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-[url('../Images/theme.jpg')]`}
       >
         <Navbar />
         {children}

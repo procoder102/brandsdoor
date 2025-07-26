@@ -101,7 +101,7 @@ useEffect(() => {
 });
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" id='Navbar' className="bg-[#031726] dark:bg-[#121212]  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="dark:bg-[url('../Images/theme.jpg')]  px-5  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
@@ -432,7 +432,7 @@ useEffect(() => {
                 </Disclosure>
 
                 <Link
-                  href="\"
+                  href="\contactUS"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact US

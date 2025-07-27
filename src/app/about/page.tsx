@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import gifFile from '../../Images/web-design-gif--final.gif'
 import iconW from '../../Images/icon-web-design-20.jpg'
+import Requestcard from '@/components/Requestcard/page'
 
 export default function AboutUs(){
   return (
@@ -40,6 +41,9 @@ export default function AboutUs(){
           </div>
         </div>
       </section>
+      <section className='lg:p-5'>
+              <Requestcard />
+            </section>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import serchEngine from "../../Images/searchEngineOpt.gif"
 import Cardbanner from "@/components/Cardbanner/page"
+import Requestcard from "@/components/Requestcard/page"
 
 export default function Serchengine() {
     const designDevlopment = [
@@ -16,7 +17,7 @@ export default function Serchengine() {
   },
     {title:'Content Optimization',
     body:`Words can create; words can destroy; words can borne revolution; words express ideas and emotions. If the right words are not used it can lead to miscommunication...`,
-    url:'/',
+    url:'/serch-engine-optimization/content-page-optimazation',
     linkName:'Learn More'
   },
 ]
@@ -25,6 +26,7 @@ export default function Serchengine() {
       <div className='h-75'>
         <Image src={serchEngine} alt='banner' className='h-75' />
       </div>
+      
       <section className='Marketing lg:p-10'>
         <h1 className='text-4xl font-bold text-center dark:text-white'>Our Performance Marketing Clients</h1>
         <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
@@ -47,6 +49,9 @@ export default function Serchengine() {
                 </div>
                 )}
               </div>
+              <section className='lg:p-5'>
+              <Requestcard />
+              </section>
             </section>
     </section>
   )

@@ -19,8 +19,8 @@ export default function Dynamicwebsite() {
         
             <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">For <span className='font-bold dark:text-[#fdd007]'>Custom Dynamic Web Designs,</span>{CompleatesocialMedia}</p>
             <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">For <span className='font-bold dark:text-[#fdd007]'>Custom Dynamic Design with Shopping cart</span>{customDesignShopping}</p>
-      </section>
       <Requestcard />
+      </section>
     </section>
   )
 }

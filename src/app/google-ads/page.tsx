@@ -20,6 +20,7 @@ import keywordManagement from '../../Images/keyword.png';
 import campaginAdd from '../../Images/digital-marketing.png';
 import tracking from '../../Images/tracking.png';
 import report from '../../Images/report.png';
+import Requestcard from "@/components/Requestcard/page";
 
 export default function Google() {
 
@@ -104,6 +105,9 @@ export default function Google() {
         </div>
         )}
       </div>
+      <section className='lg:p-5'>
+                    <Requestcard />
+                    </section>
     </section>
   )
 }

@@ -20,11 +20,12 @@ export default function Onpage() {
     const Keyword  = `Keyword research is crucial for successful search Engine Website Optimization, managing Pay Per Click keywords and achieving top search engine rankings.`
     const Meta = `Keywords still play an important role in the Search Engine Optimization. We carefully select main keywords for each and every page in the website and optimize the pages for those keywords.\nGo through this Meta tag generator:`
     const Description = `Meta tag Description is the sentence which appears below the title in the search engine results and gives an overall description of the page. We optimize each page's description tag which is more relevant to the page.`
-    const Press = `Press Releases are another way to increase link popularity. We offer Press Release writing and Press Release Submission to various PR websites.\n\nFree Press Release Submission Sites.`
-    const Blog = `In Blog Submission, our skilled staff is investing their full efforts in lettering blog and submitting to the different websites having good past records like`
-    const SocialBookmarking = `Social Bookmarking is also one of the important Off-Page Factors. It also contributes to incoming website links.\n\nCurrently the most used software application.\n\nDigg is a technology news website that combines social bookmarking, blogging, RSS, and non-hierarchical editorial control. With Digg, users submit stories for review, but rather than allow an editor to decide which stories go on the homepage, the users do.\n\n\nA social search engine integrating tool with social bookmarking and search functionality.`
-
-
+    const ALTTagOptimization = `IMG ALT tags are important for the images as they give the description of images and which are also read by search engines. We carefully select IMG ALT tags for the images which are relevant to the content and help to improve the overall ranking in search engines.`
+    const c2cCode = `Content to code (C2C) is becoming very important nowadays. Imagine a scenario where you have just a few lines of content and 10 times code in your web pages. It will certainly confuse a search engine crawler to find out the actual content from the deep nested and complex code. We carefully examine the content and code of pages and optimize the content and code to give high C2C ratio for web pages.`
+    const InPage = `In-pages links are also important as they spread the link juice to other pages in a website. Our overall SEO strategy involves linking main keywords from the various pages to the other relevant pages in the website.`
+    const Sitemap = `Sitemap provides visitors an overall structure for the website and it also helps search engines to find out the pages in the website. Our sitemap strategy involves careful study of the various pages and organize the pages into a logical sequence so that it is helpful for visitors to find the information that they are looking for.`
+    const onPageOptimazationBody = ` is related directly to the content and structure of the website. This service means making appropriate changes to your web pages to make them compatible or friendly for the search engines. This also involves the actual optimization of your web pages. The web pages are optimized with regards to Meta tags, Link structures, Image optimization, body and other visible and invisible areas. On-page factors are highly preferred by major search engines like Google, MSN and Yahoo.`
+    const googleXML = `Google XML Sitemap is important as it helps Google Search Engine to find all the pages in a website. We create XML Sitemap based on the various pages in a website which are important. Ideally all pages should be listed in a Google XML Sitemap. However in a complex and dynamic website it might not be possible to list all the pages in the Google Sitemap.\n\nTo create XML sitemap for your website visit and just follow the four simple steps and get a sitemap.`
    return (
     <section className='pt-20'>
         <div className='h-75'>
@@ -33,6 +34,7 @@ export default function Onpage() {
       <section className="m-10">
         <h1 className="text-2xl tracking-[0.035em] font-bold dark:text-[#fdd007] leading-6">Organic SEO - On Page Optimization</h1>
         <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{establishContent}</p>
+        <p className="pt-5 leading-8 tracking- whitespace-pre-wrap dark:text-white"><span className='text-xl font-bold dark:text-[#fdd007]'>On-page optimization </span>{onPageOptimazationBody}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Following are the some of the aspects of on-page optimization</h3>
         <ul className='dark:text-white p-5'>
             {offPageIncludes.map((item,index) =>
@@ -48,18 +50,19 @@ export default function Onpage() {
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Meta tag Description Optimization</h3>
         <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{Description}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">IMG ALT Tag Optimization</h3>
-        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{Press}</p>
+        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{ALTTagOptimization}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Content to code (C2C) ratio</h3>
-        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{Blog}</p>
+        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{c2cCode}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">In-Page Links</h3>
-        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{SocialBookmarking}</p>
+        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{InPage}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Sitemap</h3>
-        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{SocialBookmarking}</p>
+        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{Sitemap}</p>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Google XML Sitemap</h3>
+        <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{googleXML}</p>
 
 
-        </section>
       <Requestcard />
+        </section>
     </section>
   )
 }

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import designdevlop from '../../Images/design&devlop.gif'
 import Cardbanner from '@/components/Cardbanner/page'
+import Requestcard from '@/components/Requestcard/page'
 
 export default function Design() {
 
@@ -11,7 +12,7 @@ export default function Design() {
     url:'/',
     linkName:'Learn More'
   },
-    {title:'Dynamic Website Design & Devlopment',
+    {title:'Dynamic Websites',
     body:'We believe every customer is different and has different needs, either they own a startup company or a well established business. At thebrandsdoor our Job is to identify...',
     url:'/design/dynamic-websites',
     linkName:'Learn More'
@@ -28,18 +29,23 @@ export default function Design() {
   },
     {title:'Software Devlopment',
     body:'As a Growing Software Development Company in India, Skynet Technologies provide fully featured and customized software Web Development Services...',
-    url:'/',
+    url:'/design/software-development',
     linkName:'Learn More'
   },
     {title:'Application Devlopment',
     body:'As a Growing Application Development Company in India, Skynet Technologies provide fully featured and customized Application Web Development Services...',
-    url:'/',
+    url:'/design/application-development',
+    linkName:'Learn More'
+  },
+  {title:'Customer Relationship Management',
+    body:'In the world of information technology, CRM stands for customer relationship management . CRM technology is used to profile customers as well as track their buying records in order to assist the sales staff in providing better service for each customer...',
+    url:'/design/crm-devlopment',
     linkName:'Learn More'
   },
 
   ]
   return (
-    <section className="pt-20">
+    <section className="p-10 md:p-20">
       <div className='h-75'>
         <Image src={designdevlop} alt='banner' className='h-75' />
       </div>
@@ -58,7 +64,7 @@ export default function Design() {
         </div>
       </section>
       <section>
-        <div className="grid grid-flow-col grid-rows-6 md:grid-rows-2 lg:grid-rows-3 gap-10">
+        <div className="grid grid-flow-col grid-rows-6 md:grid-rows-3 lg:grid-rows-4 gap-10">
           {designDevlopment.map((item) =>
           <div key={item.title} className='flex justify-center'> 
           <Cardbanner  Title={item.title} Body={item.body} link={item.url} linkname={item.linkName} />
@@ -66,6 +72,7 @@ export default function Design() {
           )}
         </div>
       </section>
+        <Requestcard />
 
     </section>
   )

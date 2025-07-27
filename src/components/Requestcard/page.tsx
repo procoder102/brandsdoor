@@ -2,18 +2,16 @@ export default function Requestcard () {
   return (
     <div className=" flex flex-col md:flex-row justify-evenly bg-gray-200   border border-gray-200 rounded-lg shadow-sm dark:bg-white-800 dark:border-gray-700">
     <div className="w-auto md:w-[40%] mx-5 md:mx-0 my-3  md:my-auto ">
-        <h1 className="text-lg font-semibold mb-4 ">Request Quota</h1>
-<h2 className="text-md font-medium mb-2 ">
+        <h1 className="text-lg font-semibold mb-4 dark:text-[#fdd007]">Request Quota</h1>
+<h2 className="text-md font-medium mb-2 text-gray-500">
         For Business: Fill out our feedback form
       </h2>
-      <p className="mb-4">
+      <p className="mb-4 text-gray-500">
         Toll-Free Number: <strong>(+91) 9818752056</strong>. Our team will reach out to you soon.
       </p>
     </div>
   
     <div className=" my-5 w-auto md:w-[40%] p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-white-800 dark:border-white-700">
-      
-
       <form className=" mx-auto">
         <input
           type="text"

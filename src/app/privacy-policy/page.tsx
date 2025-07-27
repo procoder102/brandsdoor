@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../custom.css'
+import Requestcard from '@/components/Requestcard/page'
 export default function Privacy () {
 
     const companyP = `The brands door pvt ltd (“us”, “we”, or “our”) operates https://thebrandsdoor.com/ (hereinafter referred to as “Service”).`
@@ -154,6 +155,9 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
                 <p className="pt-5">{contactUs}</p>
             </div>
         </div>
+        <section className='lg:p-5'>
+                <Requestcard />
+              </section>
     </section>
   )
 }

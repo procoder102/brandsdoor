@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import logo from '../../Images/brand-removebg-preview.png'
+import logo from '../../Images/BrandsDoor.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -82,10 +82,6 @@ function toggleButton(e:React.MouseEvent<HTMLButtonElement>){
   }
 }
 const popoverRef = useRef<HTMLDivElement>(null);
-// const [scrollPosition, setScrollPosition] = useState(0);
-// window.addEventListener('scroll',() =>{
-//     setScrollPosition(window.screenY)
-//   })
 useEffect(() => {
   function handileClickOutSide (event:MouseEvent) {
     if(popoverRef.current && !popoverRef.current.contains(event.target as Node)){
@@ -101,14 +97,15 @@ useEffect(() => {
 });
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" id='Navbar' className="dark:bg-[url('../Images/theme.jpg')]  px-5  fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="dark:bg-[url('../Images/theme.jpg')]    fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
-          <Link href="#" className="-m-1.5 p-1.5">
+          <Link href="#" className="">
             <span className="sr-only">Your Company</span>
             <Image
               alt=""
               src={logo}
-              className="h-20 w-auto"
+              width={100}
+              height={100}
             />
           </Link>
         </div>

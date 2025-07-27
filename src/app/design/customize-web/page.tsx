@@ -19,8 +19,8 @@ export default function Customise() {
         
             <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">For <span className='font-bold dark:text-[#fdd007]'>Custom  Web Designs,</span>{CompleatesocialMedia}</p>
             <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">For <span className='font-bold dark:text-[#fdd007]'>Custom Design with Shopping cart</span>{customDesignShopping}</p>
-      </section>
       <Requestcard />
+      </section>
     </section>
   )
 }

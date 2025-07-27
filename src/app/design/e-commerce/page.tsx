@@ -30,8 +30,8 @@ export default function Ecommerce() {
         </ul>
         <h3 className="text-xl font-samibold tracking-[0.035em] dark:text-[#fdd007] leading-6 pt-10">Complete in Social Media Platform Get in The Brands Door :</h3>
             <p className="pt-5 leading-8 tracking-[0.035em] whitespace-pre-wrap dark:text-white">{CompleatesocialMedia}</p>
-      </section>
       <Requestcard />
+      </section>
     </section>
   )
 }

@@ -31,25 +31,29 @@ import img13 from '../Images/Website Designing Company in Noida, Web_files/20.jp
 import img14 from '../Images/Website Designing Company in Noida, Web_files/21.jpg'
 import img15 from '../Images/Website Designing Company in Noida, Web_files/26.jpg'
 
-
-
-
-
-
-
-
-
-
+import { Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import { GoGraph } from "react-icons/go";
 import { FcDocument } from "react-icons/fc";
 import { FaTasks } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdCheckboxOutline } from "react-icons/io";
-import logo from '../Images/BrandsDoor.svg'
+import logo from '../Images/brand.svg';
+
 
 import Image from "next/image"
 import Imagecardcrousal from "@/components/Imagecardcrousal/page";
 import Link from "next/link";
+
+const InterFont = Inter({
+  subsets:['cyrillic'],
+  weight:'300'
+});
+
+const UbuntuFont = Ubuntu({
+  subsets: ['cyrillic'],
+  weight: '500'
+})
 
 export default function Home() {
 
@@ -116,25 +120,25 @@ const imgCrousal = [
 
 
   return (
-    <div className="pt-20">
+    <div className={`pt-20 `}>
       <Customcrousal Crousal1={Crousal2} Crousal3={Crousal3} Crousal4={Crousal4}/>
       <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 md:md:dark:border ">
         <div className="w-[100%]  lg:w-[50%]">
-          <h1 className=" text-2xl font-black p-2 dark:text-[#fdd007]">WE GROW YOUR BUSINESS ONLINE</h1>
-          <p className="dark:text-[#fefde7] p-1 text-lg font-samibold">On average we have halped business increase revenue by 90% Yoy.See what we can do for you.</p>
-          <p className="dark:text-[#fefde7] p-1 text-lg font-samibold">After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
+          <h1 className={` text-2xl font-black p-2 dark:text-[#ffee32] ${UbuntuFont.className}`}>WE GROW YOUR BUSINESS ONLINE</h1>
+          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>On average we have halped business increase revenue by 90% Yoy.See what we can do for you.</p>
+          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
         </div>
         <div className="p-1 flex flex-col justify-between  lg:w-[36%] ">
-            <input type="text" id="first_name" className="dark:text-[#fefde7] bg-gray-50 my-10 lg:my-0 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  md:dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fefde7] dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
-          <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#B39CD0] dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+            <input type="text" id="first_name" className={` bg-gray-50 my-10 lg:my-0 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  md:dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127] dark:focus:ring-blue-500 dark:focus:border-blue-500 ${UbuntuFont.className}`} placeholder="John" required />
+          <button type="button" className={`text-[#ffee32] font-bold text-4xl hover:text-[#14213D]  focus:ring-4 focus:ring-blue-300  rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#14213D] dark:hover:bg-[#ffd100] focus:outline-none dark:focus:ring-none cursor-pointer ${UbuntuFont.className}`}>
             LET US GROW YOUR BUSINESS
             </button>
         
         </div>
       </div>
       <section className="py-10 ">
-      <div>
-        <h1 className="dark:text-white font-bold text-center text-4xl m-10">Our <span className="text-orange-500">Service</span><br /><span className="dark:text-white text-lg text-gray-500">Our DigitalMarketing Services</span></h1>
+      <div className={`${UbuntuFont.className}`}>
+        <h1 className="dark:text-[#ffee32] font-bold text-center text-4xl m-10">Our <span className="text-[#ba181b]">Service</span><br /><span className="dark:text-white text-lg text-gray-500">Our DigitalMarketing Services</span></h1>
       </div>
 
         
@@ -143,62 +147,62 @@ const imgCrousal = [
     {imgMapping.map((item,index) =>(
           <div  key={index} className="my-3 ">
               <Image className="px-5 lg:w-auto lg:h-10 my-3 mx-auto w-40" src={item.name} alt="..." />
-              <h1 className="py-3 text-xl font-medium text-blue-500 text-center"><Link href={item.href}>{item.label}</Link></h1>
+              <h1 className={`py-3 text-xl font-medium text-blue-500 text-center ${UbuntuFont.className}`}><Link href={item.href}>{item.label}</Link></h1>
           </div>
         ) )}
   </div>
   </div>
   </section>
       <div className="bg-[#fdf8f5] dark:bg-transparent pt-20">
-        <h1 className="text-center text-xl font-black  pt-5 dark:text-[#fdd007]">We do the things differently and out of the box</h1>
-        <p className="text-center text-base font-medium dark:text-white">Leading Digital Marketing Agency in Delhi, India</p>
+        <h1 className={`text-center text-xl font-black  pt-5 dark:text-[#ffee32] ${UbuntuFont.className}`}>We do the things differently and out of the box</h1>
+        <p className={`text-center text-base font-medium dark:text-white ${InterFont.className}`}>Leading Digital Marketing Agency in Delhi, India</p>
         <div className="flex flex-col lg:flex-row justify-evenly">
           {marketingThings.map((item) =>(
             <div className=" p-11" key={item.name}>
               <item.icon className="w-full lg:w-50 h-10 dark:text-[#90caf9]" />
-              <h1 className="p-2 font-bold font-sans dark:text-white">{item.name}</h1>
-              <span className="font-light text-start font-serif dark:text-white">{item.description}</span>
+              <h1 className={`p-2 font-bold font-sans dark:text-[#ff2428] ${UbuntuFont.className}`}>{item.name}</h1>
+              <span className={`font-light text-start font-serif dark:text-[#e5e5e5] ${InterFont.className}`}>{item.description}</span>
             </div>
           ))}
         </div>
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
-        <h1 className="dark:text-[#fdd007] text-center text-2xl font-black">Why choose digital marketing <br />services for Online Business?</h1>
-        <p className="dark:text-[#fefde7] text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is essentially a full-service Digital Marketing Agency. Based in Noida, the company was established in the year 2012. Later in 2014, at its core, The Brands Door Digital strongly supports and follows the mission of Digital India laid down by Prime Minister Shri. Narstartra Modi and provides cost-effective branding solutions for start-ups in India.</p>
+        <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why choose digital marketing <br />services for Online Business?</h1>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is essentially a full-service Digital Marketing Agency. Based in Noida, the company was established in the year 2012. Later in 2014, at its core, The Brands Door Digital strongly supports and follows the mission of Digital India laid down by Prime Minister Shri. Narstartra Modi and provides cost-effective branding solutions for start-ups in India.</p>
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
-        <h1 className="dark:text-[#fdd077] text-center text-2xl font-black">Why the Brands Doors</h1>
-        <p className="dark:text-[#fefde7] text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt. It is one of the frontrunners in the IT Industry, based in Noida, India. We are accredited with CMMI Level-3 certification. The Brands Door has been recognized as one of the prominent name among well-known IT companies. We are a perfect runway for those who desire intensely to fortify their brand presence in today’s cut-throat competitive age. The Brands Door establish their thrilling presence in 4 + years in digital commerce, web design & development, Digital Marketing.</p>
+        <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why the Brands Doors</h1>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt. It is one of the frontrunners in the IT Industry, based in Noida, India. We are accredited with CMMI Level-3 certification. The Brands Door has been recognized as one of the prominent name among well-known IT companies. We are a perfect runway for those who desire intensely to fortify their brand presence in today’s cut-throat competitive age. The Brands Door establish their thrilling presence in 4 + years in digital commerce, web design & development, Digital Marketing.</p>
       </div>
       <div className="grid my-10  grid-flow-col grid-rows-5 lg:grid-rows-3 gap-10  md:dark:border px-10">
        {whatWeProvide.map((item) =>
       <div className="flex flex-col lg:flex-row md:dark:border md:dark:border-b-white" key={item.srno}>
         <Image className="" src={item.icon} alt="..." />
         <div className=" ms-10">
-        <h1><span className="text-2xl font-bold py-10 text-end text-blue-300">{item.heading}</span><br /><span className="text-end font-thin text-gray-500 dark:text-white">{item.description}</span></h1>
+        <h1><span className={`text-2xl font-bold py-10 text-end text-[#ff2428] ${UbuntuFont.className}`}>{item.heading}</span><br /><span className={`text-end font-thin text-gray-500 dark:text-white ${InterFont.className}`}>{item.description}</span></h1>
         </div>
       </div>
       )}
       </div>
       <div className="mt-30 md:dark:border ">
-        <h1 className="dark:text-[#fdd007] text-center text-4xl font-bold">Let us grow your business</h1>
-        <p className="dark:text-[#fefde7] text-center text-xl text-gray-500">Best Digital Service in Delhi-NCR</p>
+        <h1 className={`dark:text-[#ffee32] text-center text-4xl font-bold ${UbuntuFont.className}`}>Let us grow your business</h1>
+        <p className={`dark:text-[#fefde7] text-center text-xl text-gray-500 ${UbuntuFont.className}`}>Best Digital Service in Delhi-NCR</p>
         <div className="grid grid-flow-col grid-rows-8 md:grid-rows-4 gap-x-8 my-10 mx-[20%]">
           {buldInfo.map((item) =>
           <div key={item.name} className="flex">
               <item.icon className="mt-1 font-black text-4xl lg:text-xl text-orange-500" />
-            <p className="dark:text-[#fefde7] ps-3">{item.name}</p>
+            <p className={`dark:text-[#fefde7] ps-3 ${UbuntuFont.className}`}>{item.name}</p>
           </div>
           )}
         </div>
       </div>
-      <div className="block lg:flex p-0 lg:p-20 bg-[#f2f2f2] rounded-lg shadow-lg ">
-        <div className="">
-          <Image src={logo} alt="..." width={1000} height={1000}/>
+      <div className="block lg:flex p-0 lg:p-10 bg-[#14213D] rounded-lg shadow-lg ">
+        <div className="w-[40%] m-auto">
+          <Image src={logo} alt="..." width={500} height={500}/>
         </div>
-        <div className="">
-          <h1 className="font-black text-4xl text-center dark:text-[#fdd007]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
-          <p className="p-10 dark:text-orange-500">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
+        <div className="w-[56%]">
+          <h1 className="font-bold text-2xl underline text-center dark:text-[#ffee32]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
+          <p className="p-5 dark:text-[#FFFFFF]">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
         
         <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4">
             <div className="flex flex-col md:flex-row">
@@ -206,8 +210,8 @@ const imgCrousal = [
                 <Image src={years} className="lg:w-15 lg:h-10  mx-auto" alt="..." />
               </div>
               <div className="ms-5">
-                <h1 className="text-xl font-bold p-0  dark:text-[#fdd007]">Extensive Experience</h1>
-                <p className="p-0 dark:text-orange-500">Thousands of projects completed for clients globally.</p>
+                <h1 className="text-xl font-bold p-0  dark:text-[#ffee32]">Extensive Experience</h1>
+                <p className="p-0 dark:text-[#FFFFFF]">Thousands of projects completed for clients globally.</p>
               </div>
               </div>
               <div className="flex flex-col md:flex-row">
@@ -215,8 +219,8 @@ const imgCrousal = [
                 <Image src={global} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
               <div className="ms-5">
-                <h1 className="text-xl font-bold dark:text-[#fdd007]">Global Clientèle</h1>
-                <p className="dark:text-orange-500">Our services attract clients across 32+ countries of the world.</p>
+                <h1 className="text-xl font-bold dark:text-[#ffee32]">Global Clientèle</h1>
+                <p className="dark:text-[#FFFFFF]">Our services attract clients across 32+ countries of the world.</p>
               </div>
               </div>
               <div className="flex flex-col md:flex-row">
@@ -224,8 +228,8 @@ const imgCrousal = [
                 <Image src={costEffective} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
               <div className="ms-5">
-                <h1 className="text-xl font-bold dark:text-[#fdd007]">Cost Effectiveness</h1>
-                <p className="dark:text-orange-500">We offer services at very reasonable price points.</p>
+                <h1 className="text-xl font-bold dark:text-[#ffee32]">Cost Effectiveness</h1>
+                <p className="dark:text-[#FFFFFF]">We offer services at very reasonable price points.</p>
               </div>
               </div>
               <div className="flex flex-col md:flex-row">
@@ -233,15 +237,15 @@ const imgCrousal = [
                 <Image src={devlopers} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
               <div className="ms-5">
-                <h1 className="text-xl font-bold dark:text-[#fdd007]">51+ Developers</h1>
-                <p className="dark:text-orange-500">A large, skilled and experienced team for your projects.</p>
+                <h1 className="text-xl font-bold dark:text-[#ffee32]">51+ Developers</h1>
+                <p className="dark:text-[#FFFFFF]">A large, skilled and experienced team for your projects.</p>
               </div>
               </div>
         </div>
         </div>
       </div>
         <div className="my-10" >
-          <h1 className="text-center underline font-black text-4xl text-orange-300">
+          <h1 className="text-center underline font-black text-4xl text-[#ffee32]">
             Our Awesome Client
           </h1>
           <div className="carousel carousel-center  rounded-box  space-x-4 p-6">
@@ -280,21 +284,21 @@ const imgCrousal = [
             </div>
           </div>
         </div>
-        <section className="bg-[#F5EEF8] border border-gray-200 rounded-lg shadow-lg ">
+        <section className="bg-[#14213D] border border-gray-200 rounded-lg shadow-lg ">
         <div className=" flex flex-col md:flex-row justify-evenly p-5 md:p-20 " >
             <div >
-              <h1 className="text-2xl text-center font-extrabold dark:text-[#fdd007]">LET'S CONNECT</h1>
+              <h1 className="text-2xl text-center font-extrabold dark:text-[#ffee32]">LET'S CONNECT</h1>
               <p className="dark:text-orange-500">TALK TO OUR DIGITAL MARKETING STRATEGIST NOW</p>
             </div>
             <div className="mt-10 ms-8 md:ms-0 md:mt-0">
-              <button type="button" className="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Call Now +91-9818752056,+91-9718358080</button>
+              <button type="button" className="focus:outline-none text-white bg-[#14213D] cursor-pointer hover:bg-[#ffee32] focus:ring-4 focus:ring-yellow-300 dark:outline-solid dark:hover:outline-none rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 dark:hover:bg-[#ffee32] font-black">Call Now +91-9818752056,+91-9718358080</button>
             </div>
         </div>
             </section>
             <section className="">
               <div className="my-10 ">
-              <h1 className="underline font-black text-center text-2xl dark:text-[#E4E4E4]">SHOWCASING OUR EXPERTISE</h1>
-              <p className="text-center text-4xl text-gray-500 pt-10 dark:text-[#E4E4E4]">MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
+              <h1 className={`underline font-black text-center text-2xl dark:text-[#ffee32] ${UbuntuFont.className}`}>SHOWCASING OUR EXPERTISE</h1>
+              <p className={`text-center text-4xl text-gray-500 pt-10 dark:text-[#E4E4E4] ${UbuntuFont.className}`}>MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
               
               <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>
             </div>

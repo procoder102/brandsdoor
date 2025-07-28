@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import logo from '../../Images/BrandsDoor.png';
+
+import logo from '../../Images/brand.svg';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -97,15 +99,13 @@ useEffect(() => {
 });
   return (
     <header className="bg-white" ref={popoverRef}>
-      <nav aria-label="Global" id='Navbar' className="dark:bg-[url('../Images/theme.jpg')]    fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
+      <nav aria-label="Global" id='Navbar' className="dark:bg-[#061127] p-3 fixed z-10 transition-all duration-300 w-full mx-auto flex  items-center justify-between  lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="#" className="">
-            <span className="sr-only">Your Company</span>
             <Image
               alt=""
               src={logo}
-              width={100}
-              height={100}
+              className='w-[10vw]'
             />
           </Link>
         </div>
@@ -122,12 +122,12 @@ useEffect(() => {
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
           
 
-          <Link href="/" className=" text-sm/6 font-semibold text-gray-900">
-            <span className='text-white'>Home</span>
+          <Link href="/" className=" text-base font-semibold text-gray-900 hover:underline ">
+            <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>Home</span>
           </Link>
           <Popover className="relative " >
-            <PopoverButton name='about'  className=" text-white cursor-pointer flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" onClick={toggleButton}>
-              About us
+            <PopoverButton name='about'  className=" text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]  cursor-pointer flex items-center gap-x-1 text-base font-semibold text-gray-900" onClick={toggleButton}>
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>About us</span>
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 
@@ -139,7 +139,7 @@ useEffect(() => {
                 {About.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-base hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
@@ -159,8 +159,9 @@ useEffect(() => {
           </Popover>
           
           <Popover className="relative">
-            <PopoverButton className="flex text-white items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='service'  onClick={toggleButton}>
-              Our Services
+            <PopoverButton className="flex text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b] items-center gap-x-1 text-base font-semibold text-gray-900" name='service'  onClick={toggleButton}>
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>Our Services</span>
+              
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 
@@ -173,7 +174,7 @@ useEffect(() => {
                 {services.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-base hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
@@ -193,8 +194,8 @@ useEffect(() => {
             </Transition>
           </Popover>
           <Popover className="relative">
-            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='news' onClick={toggleButton}>
-              The News
+            <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b] flex items-center gap-x-1 text-base font-semibold text-gray-900" name='news' onClick={toggleButton}>
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>The News</span>
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 
@@ -207,7 +208,7 @@ useEffect(() => {
                 {theNews.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-base hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
@@ -228,8 +229,9 @@ useEffect(() => {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='sms' onClick={toggleButton}>
-              BULK SMS
+            <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b] flex items-center gap-x-1 text-base font-semibold text-gray-900" name='sms' onClick={toggleButton}>
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>BULK SMS</span>
+              
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 
@@ -242,7 +244,7 @@ useEffect(() => {
                 {bulksms.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-base hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
@@ -263,8 +265,9 @@ useEffect(() => {
           </Popover>
 
           <Popover className="relative">
-            <PopoverButton className="text-white flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900" name='portfolio' onClick={toggleButton}>
-              Our Portfolio
+            <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b] flex items-center gap-x-1 text-base font-semibold text-gray-900" name='portfolio' onClick={toggleButton}>
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>Our Portfolio</span>
+              
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400 hover:rotate-180" />
             </PopoverButton>
 
@@ -277,7 +280,7 @@ useEffect(() => {
                 {portfolio.map((item) => (
                   <div
                     key={item.name}
-                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg P-1 text-base hover:bg-gray-50"
                   >
                     <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                       <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
@@ -297,8 +300,9 @@ useEffect(() => {
             </Transition>
           </Popover>
 
-          <Link href="/contactUS" className="text-white text-sm/6 font-semibold text-gray-900">
-            Contact US
+          <Link href="/contactUS" className="text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b] text-base font-semibold text-gray-900">
+              <span className='text-[#ffee32] hover:text-[#ffd100]  hover:underline hover:underline-offset-[4px] cursor-pointer decoration-[#ba181b]'>Contact US</span>
+            
           </Link>
         </PopoverGroup>
         

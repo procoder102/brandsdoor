@@ -131,7 +131,9 @@ export default function Google() {
                 </div>
             </section>
         </div>
-        <Requestcard />
+        <section className='lg:p-5'>
+                      <Requestcard />
+                      </section>
     </section>
   )
 }

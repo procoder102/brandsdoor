@@ -1,6 +1,19 @@
 import React from 'react'
-import '../../custom.css'
-import Requestcard from '@/components/Requestcard/page'
+import '../../custom.css';
+import { Inter,Ubuntu } from 'next/font/google';
+import Requestcard from '@/components/Requestcard/page';
+
+const InterFont = Inter({
+  subsets:['cyrillic'],
+  weight:'300'
+});
+
+const UbuntuFont = Ubuntu({
+  subsets: ['cyrillic'],
+  weight: '500'
+})
+
+
 export default function Privacy () {
 
     const companyP = `The brands door pvt ltd (“us”, “we”, or “our”) operates https://thebrandsdoor.com/ (hereinafter referred to as “Service”).`
@@ -15,10 +28,11 @@ export default function Privacy () {
     const dataSubject = "DATA SUBJECT is any living individual who is the subject of Personal Data."
     const userData = "THE USER is the individual using our Service. The User corresponds to the Data Subject, who is the subject of Personal Data." 
     const datCollected = `We may use your Personal Data to contact you with newsletters, marketing or promotional materials and other information that may be of interest to you. You may opt out of receiving any, or all, of these communications from us by following the unsubscribe link. Usage Data \nWe may also collect information that your browser sends whenever you visit our Service or when you access Service by or through any device (“Usage Data”). This Usage Data may include information such as your computer’s Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers and other diagnostic data. \nWhen you access Service with a device, this Usage Data may include information such as the type of device you use, your device unique ID, the IP address of your device, your device operating system, the type of Internet browser you use, unique device identifiers and other diagnostic data.`
-    const locationData = `Location Data\nWe may use and store information about your location if you give us permission to do so (“Location Data”). We use this data to provide features of our Service, to improve and customize our Service.\nYou can enable or disable location services when you use our Service at any time by way of your device settings.
+    const locationData = `\nWe may use and store information about your location if you give us permission to do so (“Location Data”). We use this data to provide features of our Service, to improve and customize our Service.\nYou can enable or disable location services when you use our Service at any time by way of your device settings.
 Tracking Cookies Data\nWe use cookies and similar tracking technologies to track the activity on our Service and we hold certain information.Cookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service.
 \nCookies are files with a small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Other tracking technologies are also used such as beacons, tags and scripts to collect and track information and to improve and analyze our Service.
 \n \nExamples of Cookies we use:\n0.1. Session Cookies: We use Session Cookies to operate our Service.0.2. Preference Cookies: We use Preference Cookies to remember your preferences and various settings.\n0.3. Security Cookies: We use Security Cookies for security purposes.\n0.4. Advertising Cookies: Advertising Cookies are used to serve you with advertisements that may be relevant to you and your interests.`
+    
     
     const useOfData = `The brands door pvt ltd uses the collected data for various purposes:\n0.1. to provide and maintain our Service.\n0.3. to allow you to participate in interactive features of our Service when you choose to do so.\n0.4. to provide customer support.\n0.5. to gather analysis or valuable information so that we can improve our Service.\n0.6. to monitor the usage of our Service.\n0.7. to detect, prevent and address technical issues.\n0.8. to fulfil any other purpose for which you provide it.\n0.9. to carry out our obligations and enforce our rights arising from any contracts entered into between you and us, including for billing and collection.\n0.10. to provide you with notices about your account and/or subscription, including expiration and renewal notices, email-instructions, etc.\n0.11. to provide you with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information.\n0.12. in any other way we may describe when you provide the information.\n0.13. for any other purpose with your consent.`
     const retentionOfData = `We will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies. We will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for longer time periods.`
@@ -92,67 +106,67 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
     <section className='pt-20 lg:pt-20 font-[Open_Sans] dark:text-[#E4E4E4]'>
         <div className="p-10 lg:p-25">
             <div  className='paraColor dark:text-[#E4E4E4]'>
-                <h2 className='text-2xl font-bold font-[helvetica]'>WELCOME TO THE BRANDS DOOR PVT LTD.</h2>
-                <p className='pt-5'>{companyP}</p>
+                <h2 className={`text-2xl font-bold font-[helvetica] dark:text-[#ffee32] ${UbuntuFont.className}`}>WELCOME TO THE BRANDS DOOR PVT LTD.</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{companyP}</p>
                 <p>{priv}</p>
-                <p className='pt-5'>{serviceP}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{serviceP}</p>
                 <p>{Term}</p>
 
-                <h2 className='text-xl font-bold pt-10'>2. Defination</h2>
-                <p className="pt-5">{serviceLink}</p>
-                <p className="pt-5">{personalData}</p>
-                <p className='pt-5'>{usesData}</p>
-                <p className="pt-5">{dataContainer}</p>
-                <p className="pt-5">{dataProcess}</p>
-                <p className="pt-5">{dataSubject}</p>
-                <p className="pt-5">{userData}</p>
+                <h2 className={`text-xl font-bold pt-10  ${InterFont.className}`}>2. Defination</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{serviceLink}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{personalData}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{usesData}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{dataContainer}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{dataProcess}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{dataSubject}</p>
+                <p className={`pt-5 ${InterFont.className}`}>{userData}</p>
 
-                <h2 className="text-xl font-bold pt-10">3. Information Collection and Use</h2>
-                <p className="pt-5">We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>3. Information Collection and Use</h2>
+                <p className={`pt-5 ${InterFont.className}`}>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
                 
-                <h2 className="text-xl font-bold pt-10">4. Types of Data Collected</h2>
-                <p className="pt-5">Personal Data</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>4. Types of Data Collected</h2>
+                <p className={`pt-5 ${InterFont.className}`}>Personal Data</p>
                 <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you (“Personal Data”). Personally identifiable information may include, but is not limited to:</p>
-                <p className="pt-5">0.1. Email address</p>
+                <p className={`pt-5 ${InterFont.className}`}>0.1. Email address</p>
                 <p>0.2. First name and last name</p>
                 <p>0.3. Phone number</p>
                 <p>0.4. Address, Country, State, Province, ZIP/Postal code, City</p>
                 <p>0.5. Cookies and Usage Data</p>
-                <p className="pt-5 whitespace-pre-wrap">{datCollected}</p>
-                <p className="pt-5 whitespace-pre-wrap">{locationData}</p>
-                <p className="pt-5 whitespace-pre-wrap">{otherData}</p>
-                <h2 className="text-xl font-bold pt-10">5. Use of Data</h2>
-                <p className="pt-5 whitespace-pre-wrap">{useOfData}</p>
-                <h2 className="text-xl font-bold pt-10">6. Retention of Data</h2>
-                <p className="pt-5">{retentionOfData}</p>
-                <h2 className="text-xl font-bold pt-10">7. Transfer of Data</h2>
-                <p className="pt-5 whitespace-pre-wrap">{tranferData}</p>
-                <h2 className="pt-10 text-xl font-bold pt-10">8. Disclosure of Data.</h2>
-                <p className="pt-5 whitespace-pre-wrap">{disclosureData}</p>
-                <h2 className="pt-10 text-xl font-bold pt-10">9. Security of Data</h2>
-                <p className="pt-5">{securityData}</p>
-                <h2 className="text-xl font-bold pt-10">10. Your Data Protection Rights Under General Data Protection Regulation (GDPR)</h2>
-                <p className="pt-5 whitespace-pre-wrap">{gdpr}</p>
-                <h2 className="pt-10 text-xl font-bold pt-10">11. Your Data Protection Rights under the California Privacy Protection Act (CalOPPA)</h2>
-                <p className="pt-5 whitespace-pre-wrap">{calOPPA}</p>
-                <h2 className="pt-10 text-xl font-bold pt-10">12. Your Data Protection Rights under the California Consumer Privacy Act (CCPA)</h2>
-                <p className="pt-5 whitespace-pre-wrap">{ccpa}</p>
-                <h2 className="text-xl font-bold pt-10">13. Service Providers</h2>
-                <p className="pt-5">{serviceProvider}</p>
-                <h2 className="text-xl font-bold pt-10">14. Analytics</h2>
-                <p className="pt-5">We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
-                <h2 className="text-xl font-bold pt-10">15. CI/CD tools</h2>
-                <p className="pt-5">We may use third-party Service Providers to automate the development process of our Service.</p>
-                <h2 className="text-xl font-bold pt-10">16. Behavioral Remarketing</h2>
-                <p className="pt-5 whitespace-pre-wrap">{behavioralRemarketing}</p>
-                <h2 className="text-xl-font-bold pt-10">17. Links to Other Sites</h2>
-                <p className="pt-5 whitespace-pre-wrap">{linkOtherSites}</p>
-                <h2 className="text-xl font-bold pt-10">18. Children’s Privacy</h2>
-                <p className="pt-5 whitespace-pre-wrap">{childreenPolicy}</p>
-                <h2 className="text-xl font-bold pt-10">19. Changes to This Privacy Policy</h2>
-                <p className="pt-5 whitespace-pre-wrap">{chagesToPrivacyPolicy}</p>
-                <h2 className="text-xl font-bold pt-10">20. Contact Us</h2>
-                <p className="pt-5">{contactUs}</p>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{datCollected}</p>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}><span className={`text-xl dark:text-[#ffee32] font-bold  ${InterFont.className}`}>Location Data</span>{locationData}</p>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{otherData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>5. Use of Data</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{useOfData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>6. Retention of Data</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{retentionOfData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>7. Transfer of Data</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{tranferData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>8. Disclosure of Data.</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{disclosureData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>9. Security of Data</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{securityData}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>10. Your Data Protection Rights Under General Data Protection Regulation (GDPR)</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{gdpr}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>11. Your Data Protection Rights under the California Privacy Protection Act (CalOPPA)</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{calOPPA}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>12. Your Data Protection Rights under the California Consumer Privacy Act (CCPA)</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{ccpa}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>13. Service Providers</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{serviceProvider}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>14. Analytics</h2>
+                <p className={`pt-5 ${InterFont.className}`}>We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>15. CI/CD tools</h2>
+                <p className={`pt-5 ${InterFont.className}`}>We may use third-party Service Providers to automate the development process of our Service.</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>16. Behavioral Remarketing</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{behavioralRemarketing}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>17. Links to Other Sites</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{linkOtherSites}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>18. Children’s Privacy</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{childreenPolicy}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>19. Changes to This Privacy Policy</h2>
+                <p className={`pt-5 whitespace-pre-wrap  ${InterFont.className}`}>{chagesToPrivacyPolicy}</p>
+                <h2 className={`text-xl dark:text-[#ffee32] font-bold pt-10  ${InterFont.className}`}>20. Contact Us</h2>
+                <p className={`pt-5 ${InterFont.className}`}>{contactUs}</p>
             </div>
         </div>
         <section className='lg:p-5'>

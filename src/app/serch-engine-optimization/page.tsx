@@ -2,8 +2,23 @@ import Image from "next/image"
 import serchEngine from "../../Images/searchEngineOpt.gif"
 import Cardbanner from "@/components/Cardbanner/page"
 import Requestcard from "@/components/Requestcard/page"
+import { Inter } from "next/font/google"
+import { Ubuntu } from "next/font/google"
+
+const InterFont = Inter({
+    subsets:['cyrillic'],
+    weight:'300'
+  });
+  
+  const UbuntuFont = Ubuntu({
+    subsets: ['cyrillic'],
+    weight: '500'
+  })
 
 export default function Serchengine() {
+
+  
+
     const designDevlopment = [
     {title:'Off Page Optimization',
     body:'Off-page optimization is a part of Search Engine Optimization (SEO) which includes those activities which indirectly help in the online promotion of a website in search engines. All these activities help in...',
@@ -28,7 +43,7 @@ export default function Serchengine() {
       </div>
       
       <section className='Marketing lg:p-10'>
-        <h1 className='text-4xl font-bold text-center dark:text-white'>Our Performance Marketing Clients</h1>
+        <h1 className={`text-4xl font-bold text-center  dark:text-[#ffee32] ${UbuntuFont.className}`}>Our Performance Marketing Clients</h1>
         <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
         <div className="flex justify-around flex-col lg:flex-row">
           <h1 className="text-4xl font-bold text-blue-500 text-center">100+ <span className="font-light text-black text-sm dark:text-white"><br />Total Website Traffic</span></h1>

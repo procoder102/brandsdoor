@@ -61,7 +61,7 @@ export default function Home() {
     {name:Service1,label:'SEO', href:'/serch-engine-optimization'},
     {name:Service2,label:'SMS/SSM',href:'/bulksms'},
     {name:Service3,label:'Content Merketing',href:'/content-writing'},
-    {name:Service4,label:'Website Design',href:'/design'},
+    {name:Service4,label:'Websites',href:'/design'},
     {name:Service5,label:'Logo & Graphic Design',href:'/design'}
   ]
 
@@ -196,11 +196,11 @@ const imgCrousal = [
           )}
         </div>
       </div>
-      <div className="block lg:flex p-0 lg:p-10 bg-[#14213D] rounded-lg shadow-lg ">
-        <div className="w-[40%] m-auto">
+      <div className=" block lg:flex p-0 lg:p-10 bg-[#14213D] rounded-lg shadow-lg ">
+        <div className="w-[100%] md:w-[40%] m-auto">
           <Image src={logo} alt="..." width={500} height={500}/>
         </div>
-        <div className="w-[56%]">
+        <div className="w-[100%] lg:w-[56%]">
           <h1 className="font-bold text-2xl underline text-center dark:text-[#ffee32]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
           <p className="p-5 dark:text-[#FFFFFF]">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
         

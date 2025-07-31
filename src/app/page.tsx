@@ -277,11 +277,11 @@ const imgCrousal = [
         </div>
         </div>
       </div>
-        <div className="my-10" >
+        <div className="m-10" >
           <h1 className="text-center underline font-black text-4xl text-[#ffee32]" data-aos='fade-left'>
             Our Awesome Client
           </h1>
-          <div className="carousel carousel-center  rounded-box  space-x-4 p-6" >
+          <div className="carousel carousel-center  rounded-box  space-x-4 p-6" data-aos='fade-right'>
             <div className="carousel-item">
               <Image alt="" src={img04} height={300}  />
             </div>

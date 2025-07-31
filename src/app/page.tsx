@@ -1,3 +1,4 @@
+'use client'
 import Customcrousal from "@/components/Customcrousal/page";
 import Crousal2 from "../Images/crousal.gif";
 import Crousal3 from "@/Images/carousal3.jpg";
@@ -15,7 +16,7 @@ import bussiness5 from "../Images/business5.png";
 import Image1 from '../Images/Website Designing Company in Noida, Web_files/101.jpg';
 import Image2 from '../Images/Website Designing Company in Noida, Web_files/102.jpg'
 import Image3 from '../Images/Website Designing Company in Noida, Web_files/105.jpg'
-import years from '../Images/image.png'
+import years from '../Images/17.svg'
 import devlopers from '../Images/image (3).png'
 import global from '../Images/image (2).png'
 import costEffective from '../Images/image (1).png'
@@ -39,11 +40,14 @@ import { FaTasks } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdCheckboxOutline } from "react-icons/io";
 import logo from '../Images/brand.svg';
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 import Image from "next/image"
 import Imagecardcrousal from "@/components/Imagecardcrousal/page";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const InterFont = Inter({
   subsets:['cyrillic'],
@@ -55,7 +59,18 @@ const UbuntuFont = Ubuntu({
   weight: '500'
 })
 
+
 export default function Home() {
+
+ const [isVisible, setIsVisible] = useState(false);
+
+ useEffect(() => {
+  setIsVisible(true); // triggers animation on mount
+  Aos.init({
+    duration: 800, // animation duration in ms
+    once: true, // whether animation should happen only once
+  });
+}, []);
 
   const imgMapping = [
     {name:Service1,label:'SEO', href:'/serch-engine-optimization'},
@@ -142,16 +157,34 @@ const imgCrousal = [
       </div>
 
         
-<div className="carousel carousel-center rounded-box dark:bg-white">
+<div
+  className={`transition-all duration-500 ease-out transform carousel carousel-center rounded-box dark:bg-white ${
+    isVisible ? 'translate-x-0 opacity-100' : '-translate-x-28 opacity-0'
+  }`}
+>
   <div className="carousel-item w-auto lg:w-[98vw] flex justify-evenly">
-    {imgMapping.map((item,index) =>(
-          <div  key={index} className="my-3 ">
-              <Image className="px-5 lg:w-auto lg:h-10 my-3 mx-auto w-40" src={item.name} alt="..." />
-              <h1 className={`py-3 text-xl font-medium text-blue-500 text-center ${UbuntuFont.className}`}><Link href={item.href}>{item.label}</Link></h1>
-          </div>
-        ) )}
+    {imgMapping.map((item, index) => (
+      <div
+        key={index}
+        className="my-3 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+      >
+        <Link href={item.href}>
+          <Image
+            className="px-5 lg:w-auto lg:h-20 my-3 mx-auto w-40"
+            src={item.name}
+            alt="..."
+          />
+          <h1
+            className={`text-xl font-medium text-blue-500 text-center ${UbuntuFont.className}`}
+          >
+            {item.label}
+          </h1>
+        </Link>
+      </div>
+    ))}
   </div>
-  </div>
+</div>
+
   </section>
       <div className="bg-[#fdf8f5] dark:bg-transparent pt-20">
         <h1 className={`text-center text-xl font-black  pt-5 dark:text-[#ffee32] ${UbuntuFont.className}`}>We do the things differently and out of the box</h1>
@@ -184,7 +217,7 @@ const imgCrousal = [
       </div>
       )}
       </div>
-      <div className="mt-30 md:dark:border ">
+      <div className="mt-30 md:dark:border " data-aos="fade-up">
         <h1 className={`dark:text-[#ffee32] text-center text-4xl font-bold ${UbuntuFont.className}`}>Let us grow your business</h1>
         <p className={`dark:text-[#fefde7] text-center text-xl text-gray-500 ${UbuntuFont.className}`}>Best Digital Service in Delhi-NCR</p>
         <div className="grid grid-flow-col grid-rows-8 md:grid-rows-4 gap-x-8 my-10 mx-[20%]">
@@ -197,17 +230,17 @@ const imgCrousal = [
         </div>
       </div>
       <div className=" block lg:flex p-0 lg:p-10 bg-[#14213D] rounded-lg shadow-lg ">
-        <div className="w-[100%] md:w-[40%] m-auto">
+        <div className="w-[100%] md:w-[40%] m-auto" data-aos='slide-up'>
           <Image src={logo} alt="..." width={500} height={500}/>
         </div>
-        <div className="w-[100%] lg:w-[56%]">
+        <div className="w-[100%] lg:w-[56%]" data-aos='fade-right'>
           <h1 className="font-bold text-2xl underline text-center dark:text-[#ffee32]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
           <p className="p-5 dark:text-[#FFFFFF]">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
         
-        <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4">
+        <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4" data-aos='fade-left'>
             <div className="flex flex-col md:flex-row">
-              <div>
-                <Image src={years} className="lg:w-15 lg:h-10  mx-auto" alt="..." />
+              <div className="w-15">
+                <Image src={years} className="  mx-auto" alt="..." />
               </div>
               <div className="ms-5">
                 <h1 className="text-xl font-bold p-0  dark:text-[#ffee32]">Extensive Experience</h1>
@@ -245,10 +278,10 @@ const imgCrousal = [
         </div>
       </div>
         <div className="my-10" >
-          <h1 className="text-center underline font-black text-4xl text-[#ffee32]">
+          <h1 className="text-center underline font-black text-4xl text-[#ffee32]" data-aos='fade-left'>
             Our Awesome Client
           </h1>
-          <div className="carousel carousel-center  rounded-box  space-x-4 p-6">
+          <div className="carousel carousel-center  rounded-box  space-x-4 p-6" data-aos='fade-right'>
             <div className="carousel-item">
               <Image alt="" src={img04} height={300}  />
             </div>
@@ -286,11 +319,11 @@ const imgCrousal = [
         </div>
         <section className="bg-[#14213D] border border-gray-200 rounded-lg shadow-lg ">
         <div className=" flex flex-col md:flex-row justify-evenly p-5 md:p-20 " >
-            <div >
-              <h1 className="text-2xl text-center font-extrabold dark:text-[#ffee32]">LET'S CONNECT</h1>
+            <div data-aos='fade-right'>
+              <h1 className="text-2xl text-center font-extrabold dark:text-[#ffee32]" >LET'S CONNECT</h1>
               <p className="dark:text-orange-500">TALK TO OUR DIGITAL MARKETING STRATEGIST NOW</p>
             </div>
-            <div className="mt-10 ms-8 md:ms-0 md:mt-0">
+            <div className="mt-10 ms-8 md:ms-0 md:mt-0" data-aos='zoom-in'>
               <button type="button" className="focus:outline-none text-white bg-[#14213D] cursor-pointer hover:bg-[#ffee32] focus:ring-4 focus:ring-yellow-300 dark:outline-solid dark:hover:outline-none rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 dark:hover:bg-[#ffee32] font-black">Call Now +91-9818752056,+91-9718358080</button>
             </div>
         </div>

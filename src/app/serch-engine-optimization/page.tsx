@@ -44,7 +44,7 @@ export default function Serchengine() {
       
       <section className='Marketing lg:p-10'>
         <h1 className={`text-4xl font-bold text-center  dark:text-[#ffee32] ${UbuntuFont.className}`}>Our Performance Marketing Clients</h1>
-        <p className="text-center  p-10 lg:px-35 dark:text-[#fefde7]">The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
+        <p className={`text-center  p-10 lg:px-35 dark:text-[#fefde7]${InterFont.className}`}>The SEO Agency has helped organizations across all sectors build websites that generate more leads, rank better and best and reach goals. Our websites not only look great but also use specific call-to-action to convert website visitors to online leads.</p>
         <div className="flex justify-around flex-col lg:flex-row">
           <h1 className="text-4xl font-bold text-blue-500 text-center">100+ <span className="font-light text-black text-sm dark:text-white"><br />Total Website Traffic</span></h1>
           <h1 className="text-4xl font-bold text-blue-500 text-center">10 CR+<span className="font-light text-black text-sm dark:text-white"><br />Ecommerce Transaction</span></h1>

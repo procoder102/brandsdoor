@@ -140,7 +140,7 @@ const imgCrousal = [
       <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 md:md:dark:border ">
         <div className="w-[100%]  lg:w-[50%]">
           <h1 className={` text-2xl font-black p-2 dark:text-[#ffee32] ${UbuntuFont.className}`}>WE GROW YOUR BUSINESS ONLINE</h1>
-          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>On average we have halped business increase revenue by 90% Yoy.See what we can do for you.</p>
+          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>On average we have halped business increase revenue by 90%.See what we can do for you.</p>
           <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
         </div>
         <div className="p-1 flex flex-col justify-between  lg:w-[36%] ">

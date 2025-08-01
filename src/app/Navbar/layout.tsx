@@ -124,7 +124,13 @@ export default function Navbar() {
           <Link href="/" className=" text-base font-semibold text-gray-900 ">
             <span className='text-[#ffee32]  hover:text-[#ffd100]   underline-animate cursor-pointer '>Home</span>
           </Link>
-          <Popover className="relative"  >
+          <Link href="/about" className=" text-base font-semibold text-gray-900 ">
+            <span className='text-[#ffee32]  hover:text-[#ffd100]   underline-animate cursor-pointer '>About US</span>
+          </Link>
+          <Link href="/privacy-policy" className=" text-base font-semibold text-gray-900 ">
+            <span className='text-[#ffee32]  hover:text-[#ffd100]   underline-animate cursor-pointer '>Privacy Policy</span>
+          </Link>
+          {/* <Popover className="relative"  >
             <PopoverButton name='about'  className=" text-[#ffee32] hover:text-[#ffd100]  cursor-pointer  cursor-pointer flex items-center gap-x-1 text-base font-semibold text-gray-900" onMouseEnter={toggleButton}>
               <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer'>About us</span>
               <ChevronDownIcon aria-hidden="true" className={`${activePopover == 'about' ?  `size-5 flex-none text-gray-400 rotate-180` : `size-5 flex-none text-gray-400`}`} />
@@ -155,7 +161,7 @@ export default function Navbar() {
                 </div>
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
 
           <Popover className="relative">
             <PopoverButton className="flex text-[#ffee32] hover:text-[#ffd100]   cursor-pointer decoration-[#ba181b] items-center gap-x-1 text-base font-semibold text-gray-900" name='service' onMouseEnter={toggleButton}>

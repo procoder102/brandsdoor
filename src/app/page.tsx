@@ -136,7 +136,10 @@ const imgCrousal = [
 
   return (
     <div className={`pt-20`}>
-      <Customcrousal Crousal1={Crousal2} Crousal3={Crousal3} Crousal4={Crousal4}/>
+      {/* <Customcrousal Crousal1={Crousal2} Crousal3={Crousal3} Crousal4={Crousal4}/> */}
+      <div className='h-75'>
+              <Image src={Crousal2} alt='banner' className='h-75' />
+            </div>
       <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 md:md:dark:border ">
         <div className="w-[100%]  lg:w-[50%]">
           <h1 className={` text-2xl font-black p-2 dark:text-[#ffee32] ${UbuntuFont.className}`}>WE GROW YOUR BUSINESS ONLINE</h1>

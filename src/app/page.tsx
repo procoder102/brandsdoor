@@ -237,39 +237,39 @@ const imgCrousal = [
           <h1 className="font-bold text-2xl underline text-center dark:text-[#ffee32]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
           <p className="p-5 dark:text-[#FFFFFF]">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
         
-        <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4" data-aos='fade-left'>
+        <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4">
             <div className="flex flex-col md:flex-row">
-              <div className="w-15">
+              <div className="w-15" data-aos='float-right'>
                 <Image src={years} className="  mx-auto" alt="..." />
               </div>
-              <div className="ms-5">
+              <div className="ms-5" data-aos='slide-up'>
                 <h1 className="text-xl font-bold p-0  dark:text-[#ffee32]">Extensive Experience</h1>
                 <p className="p-0 dark:text-[#FFFFFF]">Thousands of projects completed for clients globally.</p>
               </div>
               </div>
-              <div className="flex flex-col md:flex-row">
-              <div>
+              <div className="flex flex-col md:flex-row" >
+              <div data-aos='float-right'>
                 <Image src={global} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
-              <div className="ms-5">
+              <div className="ms-5" data-aos='slide-up'>
                 <h1 className="text-xl font-bold dark:text-[#ffee32]">Global Clientèle</h1>
                 <p className="dark:text-[#FFFFFF]">Our services attract clients across 32+ countries of the world.</p>
               </div>
               </div>
               <div className="flex flex-col md:flex-row">
-              <div>
+              <div data-aos='float-left'>
                 <Image src={costEffective} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
-              <div className="ms-5">
+              <div className="ms-5" data-aos='slide-up'>
                 <h1 className="text-xl font-bold dark:text-[#ffee32]">Cost Effectiveness</h1>
                 <p className="dark:text-[#FFFFFF]">We offer services at very reasonable price points.</p>
               </div>
               </div>
               <div className="flex flex-col md:flex-row">
-              <div>
+              <div data-aos='float-left' >
                 <Image src={devlopers} className="lg:w-15 lg:h-10 mx-auto" alt="..." />
               </div>
-              <div className="ms-5">
+              <div className="ms-5" data-aos='slide-up'>
                 <h1 className="text-xl font-bold dark:text-[#ffee32]">51+ Developers</h1>
                 <p className="dark:text-[#FFFFFF]">A large, skilled and experienced team for your projects.</p>
               </div>
@@ -278,7 +278,7 @@ const imgCrousal = [
         </div>
       </div>
         <div className="m-10" >
-          <h1 className="text-center underline font-black text-4xl text-[#ffee32]" data-aos='fade-left'>
+          <h1 className="text-center underline font-black text-4xl text-[#ffee32]" data-aos='fade-right'>
             Our Awesome Client
           </h1>
           <div className="carousel carousel-center  rounded-box  space-x-4 p-6" data-aos='fade-right'>

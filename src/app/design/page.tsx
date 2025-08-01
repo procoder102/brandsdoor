@@ -64,7 +64,7 @@ export default function Design() {
         </div>
       </section>
       <section>
-        <div className="grid grid-flow-col grid-rows-6 md:grid-rows-3 lg:grid-rows-4 gap-10">
+        <div className="grid grid-flow-col grid-rows-7 md:grid-rows-4 gap-10">
           {designDevlopment.map((item) =>
           <div key={item.title} className='flex justify-center'> 
           <Cardbanner  Title={item.title} Body={item.body} link={item.url} linkname={item.linkName} />

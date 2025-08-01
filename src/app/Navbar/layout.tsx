@@ -67,7 +67,7 @@ const services = [
   { name: 'search Engine Optimization', description: '', href: '/serch-engine-optimization', icon: GlobeAltIcon },
   { name: 'social media marketing', description: '', href: '/social-media-marketing', icon: PencilIcon },
   { name: 'google ads', description: '', href: '/google-ads', icon: GlobeAltIcon },
-  { name: 'social media ads', description: '', href: '', icon: PencilIcon },
+  // { name: 'social media ads', description: '', href: '', icon: PencilIcon },
   { name: 'content writing', description: '', href: '/content-writing', icon: PencilSquareIcon }
 ]
 
@@ -106,7 +106,7 @@ export default function Navbar() {
             <Image
               alt=""
               src={logo}
-              className='w-[10vw]'
+              className='w-auto lg:w-[10vw]'
             />
           </Link>
         </div>
@@ -114,7 +114,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="m-1.5 text-white font-bold inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
           >
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
@@ -192,7 +192,7 @@ export default function Navbar() {
               </PopoverPanel>
             </Transition>
           </Popover>
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]  cursor-pointer  flex items-center gap-x-1 text-base font-semibold text-gray-900" name='news' onMouseEnter={toggleButton}>
               <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer decoration-[#ba181b]'>The News</span>
               <ChevronDownIcon aria-hidden="true" className={`${activePopover == 'news' ?  `size-5 flex-none text-gray-400 rotate-180` : `size-5 flex-none text-gray-400`}`} />
@@ -225,7 +225,7 @@ export default function Navbar() {
 
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
 
           <Popover className="relative">
             <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]   cursor-pointer decoration-[#ba181b] flex items-center gap-x-1 text-base font-semibold text-gray-900" name='sms' onMouseEnter={toggleButton}>
@@ -263,7 +263,7 @@ export default function Navbar() {
             </Transition>
           </Popover>
 
-          <Popover className="relative">
+          {/* <Popover className="relative">
             <PopoverButton className="text-[#ffee32] hover:text-[#ffd100]   cursor-pointer decoration-[#ba181b] flex items-center gap-x-1 text-base font-semibold text-gray-900" name='portfolio' onMouseEnter={toggleButton}>
               <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer decoration-[#ba181b]'>Our Portfolio</span>
 
@@ -297,7 +297,7 @@ export default function Navbar() {
 
               </PopoverPanel>
             </Transition>
-          </Popover>
+          </Popover> */}
 
           <Link href="/contactUS" className="text-[#ffee32] hover:text-[#ffd100] cursor-pointer decoration-[#ba181b] text-base font-semibold text-gray-900">
             <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer decoration-[#ba181b]'>Contact US</span>
@@ -374,7 +374,7 @@ export default function Navbar() {
                     ))}
                   </DisclosurePanel>
                 </Disclosure>
-                <Disclosure as="div" className="-mx-3">
+                {/* <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     The News
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
@@ -391,7 +391,7 @@ export default function Navbar() {
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
-                </Disclosure>
+                </Disclosure> */}
 
                 <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
@@ -412,7 +412,7 @@ export default function Navbar() {
                   </DisclosurePanel>
                 </Disclosure>
 
-                <Disclosure as="div" className="-mx-3">
+                {/* <Disclosure as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     Our Portfolio
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
@@ -429,7 +429,7 @@ export default function Navbar() {
                       </DisclosureButton>
                     ))}
                   </DisclosurePanel>
-                </Disclosure>
+                </Disclosure> */}
 
                 <Link
                   href="\contactUS"

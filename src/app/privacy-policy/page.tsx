@@ -112,7 +112,7 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
                 <p className={`pt-5 ${InterFont.className}`}>{serviceP}</p>
                 <p>{Term}</p>
 
-                <h2 className={`text-xl font-bold pt-10  ${InterFont.className}`}>2. Defination</h2>
+                <h2 className={`text-xl font-bold pt-10 dark:text-[#ffee32] ${InterFont.className}`}>2. Defination</h2>
                 <p className={`pt-5 ${InterFont.className}`}>{serviceLink}</p>
                 <p className={`pt-5 ${InterFont.className}`}>{personalData}</p>
                 <p className={`pt-5 ${InterFont.className}`}>{usesData}</p>

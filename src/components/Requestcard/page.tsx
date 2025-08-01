@@ -7,7 +7,9 @@ export default function Requestcard () {
         For Business: Fill out our feedback form
       </h2>
       <p className="mb-4 text-gray-500">
-        Toll-Free Number: <strong>(+91) 9818752056</strong>. Our team will reach out to you soon.
+        Toll-Free Number: 
+        {/* <strong>(+91)</strong> */}
+        . Our team will reach out to you soon.
       </p>
     </div>
   
@@ -16,27 +18,27 @@ export default function Requestcard () {
         <input
           type="text"
           name="name"
-          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fefde7]"
+          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127]"
           placeholder="Enter your name"
           required
         />
         <input
           type="email"
           name="email"
-          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fefde7]"
+          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127]"
           placeholder="Enter your email"
           required
         />
         <input
-          type="tel"
+          type="number"
           name="phone"
-          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fefde7]"
+          className="my-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127]"
           placeholder="Enter your phone number"
           required
         />
         <textarea
           name="message"
-          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 my-3 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#fefde7]"
+          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 my-3 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127]"
           placeholder="Write your message here..."
         ></textarea>
         <button

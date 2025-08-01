@@ -84,7 +84,7 @@ export default function Home() {
   {
     name: 'Transparent Reporting',
     description:
-      'We give it to you straight—no murky reports, no creative number crunching, and no hiding behind jargon. We love sharing the "What" and "Why" behind every strategy.',
+      'We give it to you straight no murky reports, no creative number crunching, and no hiding behind jargon. We love sharing the "What" and "Why" behind every strategy.',
     icon: GoGraph,
   },
   {
@@ -108,11 +108,11 @@ export default function Home() {
 ];
 
 const whatWeProvide = [
-  {srno:1,icon:bussiness, heading:'Increase Customer Engagement',description:'Digital marketing services improve customer engagement rates by giving defined and unique solutions to make online business more productive. Improve engagement by delivering the right message to the right audience.'},
-  {srno:2,icon:bussiness2, heading:'Promote Online Business',description:'Digital marketing services improve customer engagement rates by giving defined and unique solutions to make online business more productive. Improve engagement by delivering the right message to the right audience.'},
-  {srno:3,icon:bussiness3, heading:'Brand Awareness',description:'Digital marketing services improve customer engagement rates by giving defined and unique solutions to make online business more productive. Improve engagement by delivering the right message to the right audience.'},
-  {srno:4,icon:bussiness4, heading:'Rank Higher',description:'Digital marketing services improve customer engagement rates by giving defined and unique solutions to make online business more productive. Improve engagement by delivering the right message to the right audience.'},
-  {srno:5,icon:bussiness5, heading:'Save Money',description:'Digital marketing services improve customer engagement rates by giving defined and unique solutions to make online business more productive. Improve engagement by delivering the right message to the right audience.'},
+  {srno:1,icon:bussiness, heading:'Increase Customer Engagement',description:'Our digital marketing services are designed to boost customer engagement by delivering tailored, data-driven strategies that make your online presence more effective. We help you connect with the right audience at the right time with the right message. By creating meaningful and personalized interactions, we turn passive visitors into active, loyal customers.'},
+  {srno:2,icon:bussiness2, heading:'Promote Online Business',description:'Take your online business to the next level with digital marketing strategies that drive real results. We help you attract the right audience, boost engagement, and turn visitors into loyal customers. Our tailored solutions ensure your brand stands out in a crowded digital space delivering the right message to the right people at the right time.'},
+  {srno:3,icon:bussiness3, heading:'Brand Awareness',description:'Stand out in a crowded digital world. Our digital marketing services help elevate your brand by increasing visibility, boosting recognition, and creating lasting impressions. We craft strategies that connect you with the right audience through the right channels ensuring your brand stays top-of-mind and trusted.'},
+  {srno:4,icon:bussiness4, heading:'Rank Higher',description:'Want to be seen at the top of search results? Our digital marketing services are built to help your business rank higher by using tailored strategies that drive traffic, boost visibility, and improve engagement. We deliver the right message to the right audience making your online presence not just visible, but powerful and productive.'},
+  {srno:5,icon:bussiness5, heading:'Save Money',description:'Digital marketing is not just effective it’s cost-efficient. Our smart, targeted strategies help you get more value from every marketing dollar. By reaching the right audience with the right message, we minimize waste and maximize results. Grow your business online without overspending, and see higher returns for less investment.'},
 ]
 
 const buldInfo = [
@@ -135,13 +135,13 @@ const imgCrousal = [
 
 
   return (
-    <div className={`pt-20 `}>
+    <div className={`pt-20`}>
       <Customcrousal Crousal1={Crousal2} Crousal3={Crousal3} Crousal4={Crousal4}/>
       <div className="flex flex-col lg:flex-row justify-between h-[18%] p-10 md:md:dark:border ">
         <div className="w-[100%]  lg:w-[50%]">
           <h1 className={` text-2xl font-black p-2 dark:text-[#ffee32] ${UbuntuFont.className}`}>WE GROW YOUR BUSINESS ONLINE</h1>
-          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>On average we have halped business increase revenue by 90%.See what we can do for you.</p>
-          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>After appling for a free wes sitecheck up the team will analyze your website and suggest degital marketing methods on which you can improve user interaction and leads for your sels pipeline.</p>
+          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>On average, our clients grow their revenue by 90%. Want to see how we can help you do the same?</p>
+          <p className={`dark:text-[#fefde7] p-1 text-lg font-samibold ${InterFont.className}`}>Get a free website check-up our team will review your site and share personalized digital marketing tips to help you boost user engagement and turn more visitors into leads.</p>
         </div>
         <div className="p-1 flex flex-col justify-between  lg:w-[36%] ">
             <input type="text" id="first_name" className={` bg-gray-50 my-10 lg:my-0 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  md:dark:border-gray-600 dark:placeholder-gray-400 dark:text-[#061127] dark:focus:ring-blue-500 dark:focus:border-blue-500 ${UbuntuFont.className}`} placeholder="John" required />
@@ -162,7 +162,7 @@ const imgCrousal = [
     isVisible ? 'translate-x-0 opacity-100' : '-translate-x-28 opacity-0'
   }`}
 >
-  <div className="carousel-item w-auto lg:w-[98vw] flex justify-evenly">
+  <div className="carousel-item w-auto lg:w-[98.79vw] flex justify-evenly">
     {imgMapping.map((item, index) => (
       <div
         key={index}
@@ -201,11 +201,11 @@ const imgCrousal = [
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
         <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why choose digital marketing <br />services for Online Business?</h1>
-        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is essentially a full-service Digital Marketing Agency. Based in Noida, the company was established in the year 2012. Later in 2014, at its core, The Brands Door Digital strongly supports and follows the mission of Digital India laid down by Prime Minister Shri. Narstartra Modi and provides cost-effective branding solutions for start-ups in India.</p>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is a full-service digital marketing agency based in Noida, established in 2012. Since 2014, we’ve proudly aligned with the vision of Digital India initiated by Prime Minister Shri Narendra Modi, supporting the nation’s digital transformation. At our core, we’re committed to empowering startups and growing businesses across India with cost-effective, result-driven branding and marketing solutions.</p>
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
         <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why the Brands Doors</h1>
-        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt. It is one of the frontrunners in the IT Industry, based in Noida, India. We are accredited with CMMI Level-3 certification. The Brands Door has been recognized as one of the prominent name among well-known IT companies. We are a perfect runway for those who desire intensely to fortify their brand presence in today’s cut-throat competitive age. The Brands Door establish their thrilling presence in 4 + years in digital commerce, web design & development, Digital Marketing.</p>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt LTD. It is one of the frontrunners in the IT industry, proudly based in Noida, India, and accredited with CMMI Level 3 certification. Recognized as a prominent name among leading IT companies, we serve as the perfect launchpad for businesses looking to strengthen their brand presence in today’s highly competitive digital landscape. With over 4 years of dynamic experience in digital commerce, web design & development, and digital marketing, The Brands Door continues to deliver impactful solutions that drive growth and visibility.</p>
       </div>
       <div className="grid my-10  grid-flow-col grid-rows-5 lg:grid-rows-3 gap-10  md:dark:border px-10">
        {whatWeProvide.map((item) =>
@@ -233,14 +233,14 @@ const imgCrousal = [
         <div className="w-[100%] md:w-[40%] m-auto" data-aos='slide-up'>
           <Image src={logo} alt="..." width={500} height={500}/>
         </div>
-        <div className="w-[100%] lg:w-[56%]" data-aos='fade-right'>
-          <h1 className="font-bold text-2xl underline text-center dark:text-[#ffee32]">TOP WEBSITE DESIGN COMPANY IN INDIA</h1>
+        <div className="w-[100%] lg:w-[60%]" data-aos='fade-right'>
+          <h1 className="font-bold text-2xl underline underline-offset-4  text-center dark:text-[#ffee32]">BEST AND RELIABLE DIGITAL MEARKETING COMPANY IN INDIA</h1>
           <p className="p-5 dark:text-[#FFFFFF]">As a top-rated website design company in India, we strategize the digital footprint of cross-business verticals. Our speciality is to craft a conversion-worthy digital touchpoint with a seamless blend of strategic vision, advanced technology, and industry exposure. If you are looking to engage a website development company, here’s why you should choose us:</p>
         
         <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 gap-4">
             <div className="flex flex-col md:flex-row">
-              <div className="w-15" data-aos='float-right'>
-                <Image src={years} className="  mx-auto" alt="..." />
+              <div className="w-15 mx-auto" data-aos='float-right'>
+                <Image src={years} className="" alt="..." />
               </div>
               <div className="ms-5" data-aos='slide-up'>
                 <h1 className="text-xl font-bold p-0  dark:text-[#ffee32]">Extensive Experience</h1>
@@ -278,7 +278,7 @@ const imgCrousal = [
         </div>
       </div>
         <div className="m-10" >
-          <h1 className="text-center underline font-black text-4xl text-[#ffee32]" data-aos='fade-right'>
+          <h1 className="text-center underline underline-offset-4 font-black text-4xl text-[#ffee32]" data-aos='fade-right'>
             Our Awesome Client
           </h1>
           <div className="carousel carousel-center  rounded-box  space-x-4 p-6" data-aos='fade-right'>
@@ -324,13 +324,13 @@ const imgCrousal = [
               <p className="dark:text-orange-500">TALK TO OUR DIGITAL MARKETING STRATEGIST NOW</p>
             </div>
             <div className="mt-10 ms-8 md:ms-0 md:mt-0" data-aos='zoom-in'>
-              <button type="button" className="focus:outline-none text-white bg-[#14213D] cursor-pointer hover:bg-[#ffee32] focus:ring-4 focus:ring-yellow-300 dark:outline-solid dark:hover:outline-none rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 dark:hover:bg-[#ffee32] font-black">Call Now +91-9818752056,+91-9718358080</button>
+              <button type="button" className="focus:outline-none text-white bg-[#14213D] cursor-pointer hover:bg-[#ffee32] focus:ring-4 focus:ring-yellow-300 dark:outline-solid dark:hover:outline-none rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900 dark:hover:bg-[#ffee32] font-black">Call Now </button>
             </div>
         </div>
             </section>
             <section className="">
               <div className="my-10 ">
-              <h1 className={`underline font-black text-center text-2xl dark:text-[#ffee32] ${UbuntuFont.className}`}>SHOWCASING OUR EXPERTISE</h1>
+              <h1 className={`underline underline-offset-4 font-black text-center text-2xl dark:text-[#ffee32] ${UbuntuFont.className}`}>SHOWCASING OUR EXPERTISE</h1>
               <p className={`text-center text-4xl text-gray-500 pt-10 dark:text-[#E4E4E4] ${UbuntuFont.className}`}>MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
               
               <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>

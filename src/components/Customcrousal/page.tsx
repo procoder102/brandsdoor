@@ -15,14 +15,14 @@ export default function Customcrousal({Crousal1,Crousal3,Crousal4}:props)  {
 
   return (
     <div className="carousel w-full">
-  <div id="slide1" className="carousel-item relative w-full h-[28vw]">
+  <div id="slide1" className="carousel-item relative w-full h-auto lg:h-[28vw]">
     <Image
       src={Crousal1}
       alt="..."
       className="w-full" />
     
   </div>
-  <div id="slide2" className="carousel-item relative w-full h-[28vw]">
+  <div id="slide2" className="carousel-item relative w-full h-auto lg:h-[28vw]">
     <Image
     src={Crousal3}
       alt="..."
@@ -32,7 +32,7 @@ export default function Customcrousal({Crousal1,Crousal3,Crousal4}:props)  {
       <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
   </div>
-  <div id="slide3" className="carousel-item relative w-full h-[28vw]">
+  <div id="slide3" className="carousel-item relative w-full h-auto lg:h-[28vw]">
     <Image
     src={Crousal4}
       alt="..."
@@ -42,7 +42,7 @@ export default function Customcrousal({Crousal1,Crousal3,Crousal4}:props)  {
       <a href="#slide4" className="btn btn-circle">❯</a>
     </div>
   </div>
-  <div id="slide4" className="carousel-item relative w-full h-[28vw]">
+  <div id="slide4" className="carousel-item relative w-full h-auto lg:h-[28vw]">
     <Image
     src={Crousal1}
       alt="..."

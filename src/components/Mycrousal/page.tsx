@@ -17,10 +17,9 @@ function Mycrousal({items}:props) {
     
   return (
     <Swiper
-     modules={[ Navigation, Pagination, Autoplay]}
+     modules={[ Pagination, Autoplay]}
     spaceBetween={20}
     slidesPerView="auto"
-    navigation
     pagination={{ clickable: true }}
     autoplay={{
          delay:100, 

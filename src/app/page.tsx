@@ -14,7 +14,7 @@ import bussiness3 from "../Images/business3.png";
 import bussiness4 from "../Images/business4.png";
 import bussiness5 from "../Images/business5.png";
 import Image1 from '../Images/Website Designing Company in Noida, Web_files/101.jpg';
-import Image2 from '../Images/Website Designing Company in Noida, Web_files/102.jpg'
+import Image2 from '../Images/104.jpg';
 import Image3 from '../Images/Website Designing Company in Noida, Web_files/105.jpg'
 import years from '../Images/17.svg'
 import devlopers from '../Images/image (3).png'
@@ -39,6 +39,7 @@ import img17 from '../Images/Goderaj.png';
 import img18 from '../Images/DLF.png';
 import img19 from '../Images/group1o.png';
 import img20 from '../Images/m3m.png';
+import appS from '../Images/103.jpg'
 
 
 import { Inter } from "next/font/google";
@@ -159,11 +160,11 @@ const buldInfo = [
   {icon:IoMdCheckboxOutline,name:'IVR'},
 ]
 
-const imgCrousal = [
-  {image:Image1,description:''},
-  {image:Image2,description:''},
-  {image:Image3,description:''}
-
+const imagecard = [
+  {label:'An eCommerce Website for Apparels and Accessories',description:'The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day',imageUrl:Image1},
+  {label:'Learning Management System',description:'We offer innovative digital solutions tailored for modern businesses. Our robust B2B and B2C order & delivery app suite is designed for the complete ecosystem—customers, store owners, and delivery personnel. The suite includes a customer-facing app for placing orders, a store management app for handling incoming orders in real time, and a delivery app for bikers to streamline deliveries. A centralized web-based admin panel enables seamless monitoring of all operations across the network',imageUrl:Image2},
+  {label:'Ready-to-Use Food Ordering App',description:'We’ve developed an innovative Android-based B2B and B2C app suite designed for order and delivery businesses. This complete solution includes a customer app for placing orders, a store owner app for managing them, a delivery app for bikers to streamline logistics, and a web-based admin panel to monitor and control all operations in real time.',imageUrl:Image3},
+  {label:'App Suite for Order & Delivery',description:'We crafted an innovative B2B and B2C Android app suite for order & delivery network business. It has an item order app for the customers, order management app for the store owners, delivery app for the bikers and web-based admin panel for monitoring the activities on all three apps.',imageUrl:appS},
 ]
 
 
@@ -335,7 +336,7 @@ const imgCrousal = [
               <h1 className={`underline underline-offset-4 font-black text-center text-2xl dark:text-[#ffee32] ${UbuntuFont.className}`}>SHOWCASING OUR EXPERTISE</h1>
               <p className={`text-center text-4xl text-gray-500 pt-10 dark:text-[#E4E4E4] ${UbuntuFont.className}`}>MOBILE APP & WEBSITE DEVELOPMENT COMPANY</p>
               
-              <Imagecardcrousal Crousal1={Image1} Crousal3={Image2} Crousal4={Image3}/>
+              <Imagecardcrousal imagecard={imagecard}/>
             </div>
             </section>
     </div>

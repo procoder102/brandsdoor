@@ -20,6 +20,9 @@ import years from '../Images/17.svg'
 import devlopers from '../Images/image (3).png'
 import global from '../Images/image (2).png'
 import costEffective from '../Images/image (1).png'
+import img01 from '../Images/Irish.png';
+import img02 from '../Images/Gaurs.webp';
+import img03 from '../Images/banner-mob1.webp'
 import img04 from '../Images/Website Designing Company in Noida, Web_files/04.jpg'
 import img06 from '../Images/Website Designing Company in Noida, Web_files/06.jpg'
 import img07 from '../Images/Website Designing Company in Noida, Web_files/07.jpg'
@@ -29,8 +32,14 @@ import img10 from '../Images/Website Designing Company in Noida, Web_files/12.jp
 import img11 from '../Images/Website Designing Company in Noida, Web_files/16.jpg'
 import img12 from '../Images/Website Designing Company in Noida, Web_files/17.jpg'
 import img13 from '../Images/Website Designing Company in Noida, Web_files/20.jpg'
-import img14 from '../Images/Website Designing Company in Noida, Web_files/21.jpg'
-import img15 from '../Images/Website Designing Company in Noida, Web_files/26.jpg'
+import img14 from '../Images/Bhutani.png';
+import img15 from '../Images/prestige.webp';
+import img16 from '../Images/counyGroup.png';
+import img17 from '../Images/Goderaj.png';
+import img18 from '../Images/DLF.png';
+import img19 from '../Images/group1o.png';
+import img20 from '../Images/m3m.png';
+
 
 import { Inter } from "next/font/google";
 import { Ubuntu } from "next/font/google";
@@ -48,6 +57,7 @@ import Image from "next/image"
 import Imagecardcrousal from "@/components/Imagecardcrousal/page";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Mycrousal from "@/components/Mycrousal/page";
 
 const InterFont = Inter({
   subsets:['cyrillic'],
@@ -63,6 +73,29 @@ const UbuntuFont = Ubuntu({
 export default function Home() {
 
  const [isVisible, setIsVisible] = useState(false);
+
+ const Item = [
+  {imageUrl:img03},
+  {imageUrl:img02},
+  {imageUrl:img01},
+  {imageUrl:img14},
+  {imageUrl:img04},
+  {imageUrl:img19},
+  {imageUrl:img06},
+  {imageUrl:img17},
+  {imageUrl:img07},
+  {imageUrl:img08},
+  {imageUrl:img18},
+  {imageUrl:img09},
+  {imageUrl:img10},
+  {imageUrl:img11},
+  {imageUrl:img12},
+  {imageUrl:img13},
+  {imageUrl:img15},
+  {imageUrl:img14},
+  {imageUrl:img16},
+  {imageUrl:img20}
+ ]
 
  useEffect(() => {
   setIsVisible(true); // triggers animation on mount
@@ -284,42 +317,8 @@ const imgCrousal = [
           <h1 className="text-center underline underline-offset-4 font-black text-4xl text-[#ffee32]" data-aos='fade-right'>
             Our Awesome Client
           </h1>
-          <div className="carousel carousel-center  rounded-box  space-x-4 p-6" data-aos='fade-right'>
-            <div className="carousel-item">
-              <Image alt="" src={img04} height={300}  />
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img06} height={300} />
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img07} height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img08} height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img09}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img10}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img11}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img12}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img13}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img14}  height={300}/>
-            </div>
-            <div className="carousel-item">
-              <Image alt="" src={img15}  height={300}/>
-            </div>
-          </div>
         </div>
+          <Mycrousal items={Item} />
         <section className="bg-[#14213D] border border-gray-200 rounded-lg shadow-lg ">
         <div className=" flex flex-col md:flex-row justify-evenly p-5 md:p-20 " >
             <div data-aos='fade-right'>

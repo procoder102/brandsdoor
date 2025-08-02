@@ -20,15 +20,15 @@ import years from '../Images/17.svg'
 import devlopers from '../Images/image (3).png'
 import global from '../Images/image (2).png'
 import costEffective from '../Images/image (1).png'
-import img01 from '../Images/Irish.png';
-import img02 from '../Images/Gaurs.webp';
-import img03 from '../Images/banner-mob1.webp'
-import img04 from '../Images/Website Designing Company in Noida, Web_files/04.jpg'
-import img06 from '../Images/Website Designing Company in Noida, Web_files/06.jpg'
-import img07 from '../Images/Website Designing Company in Noida, Web_files/07.jpg'
-import img08 from '../Images/Website Designing Company in Noida, Web_files/08.jpg'
-import img09 from '../Images/Website Designing Company in Noida, Web_files/09.jpg'
-import img10 from '../Images/Website Designing Company in Noida, Web_files/12.jpg'
+import img01 from '../Images/logoslider/m3m.png';
+import img02 from '../Images/logoslider/Prestige.png';
+import img03 from '../Images/logoslider/IvoryCounty.png'
+import img04 from '../Images/logoslider/Irish.png'
+import img06 from '../Images/logoslider/Group108o.png'
+import img07 from '../Images/logoslider/Goderaj.png'
+import img08 from '../Images/logoslider/Gaurs.png'
+import img09 from '../Images/logoslider/Dlf.png'
+import img10 from '../Images/logoslider/Bhutani.png'
 import img11 from '../Images/Website Designing Company in Noida, Web_files/16.jpg'
 import img12 from '../Images/Website Designing Company in Noida, Web_files/17.jpg'
 import img13 from '../Images/Website Designing Company in Noida, Web_files/20.jpg'
@@ -76,26 +76,15 @@ export default function Home() {
  const [isVisible, setIsVisible] = useState(false);
 
  const Item = [
-  {imageUrl:img03},
-  {imageUrl:img02},
   {imageUrl:img01},
-  {imageUrl:img14},
+  {imageUrl:img02},
+  {imageUrl:img03},
   {imageUrl:img04},
-  {imageUrl:img19},
   {imageUrl:img06},
-  {imageUrl:img17},
   {imageUrl:img07},
   {imageUrl:img08},
-  {imageUrl:img18},
   {imageUrl:img09},
-  {imageUrl:img10},
-  {imageUrl:img11},
-  {imageUrl:img12},
-  {imageUrl:img13},
-  {imageUrl:img15},
-  {imageUrl:img14},
-  {imageUrl:img16},
-  {imageUrl:img20}
+  {imageUrl:img10}
  ]
 
  useEffect(() => {
@@ -238,11 +227,11 @@ const imagecard = [
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
         <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why choose digital marketing <br />services for Online Business?</h1>
-        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands Door is a full-service digital marketing agency based in Noida, established in 2012. Since 2014, we’ve proudly aligned with the vision of Digital India initiated by Prime Minister Shri Narendra Modi, supporting the nation’s digital transformation. At our core, we’re committed to empowering startups and growing businesses across India with cost-effective, result-driven branding and marketing solutions.</p>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">Brands Door is a full-service digital marketing agency based in Noida, established in 2012. Since 2014, we’ve proudly aligned with the vision of Digital India initiated by Prime Minister Shri Narendra Modi, supporting the nation’s digital transformation. At our core, we’re committed to empowering startups and growing businesses across India with cost-effective, result-driven branding and marketing solutions.</p>
       </div>
       <div className="container mx-auto  mt-20 md:dark:border ">
         <h1 className={`dark:text-[#ffee32] text-center text-2xl font-black ${UbuntuFont.className}`}>Why the Brands Doors</h1>
-        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">The Brands door Pvt LTD. It is one of the frontrunners in the IT industry, proudly based in Noida, India, and accredited with CMMI Level 3 certification. Recognized as a prominent name among leading IT companies, we serve as the perfect launchpad for businesses looking to strengthen their brand presence in today’s highly competitive digital landscape. With over 4 years of dynamic experience in digital commerce, web design & development, and digital marketing, The Brands Door continues to deliver impactful solutions that drive growth and visibility.</p>
+        <p className="dark:text-[#e5e5e5] text-start w-[100%] p-10 font-base text-gray-500">Brands door Pvt LTD. It is one of the frontrunners in the IT industry, proudly based in Noida, India, and accredited with CMMI Level 3 certification. Recognized as a prominent name among leading IT companies, we serve as the perfect launchpad for businesses looking to strengthen their brand presence in today’s highly competitive digital landscape. With over 4 years of dynamic experience in digital commerce, web design & development, and digital marketing, The Brands Door continues to deliver impactful solutions that drive growth and visibility.</p>
       </div>
       <div className="grid my-10  grid-flow-col grid-rows-5 lg:grid-rows-3 gap-10  md:dark:border px-10">
        {whatWeProvide.map((item) =>
@@ -320,7 +309,7 @@ const imagecard = [
           </h1>
         </div>
           <Mycrousal items={Item} />
-        <section className="bg-[#14213D] border border-gray-200 rounded-lg shadow-lg ">
+        <section className="bg-[#14213D] border border-gray-200 rounded-lg shadow-lg  mt-2">
         <div className=" flex flex-col md:flex-row justify-evenly p-5 md:p-20 " >
             <div data-aos='fade-right'>
               <h1 className="text-2xl text-center font-extrabold dark:text-[#ffee32]" >LET'S CONNECT</h1>

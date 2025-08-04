@@ -309,6 +309,10 @@ export default function Navbar() {
             <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer decoration-[#ba181b]'>Contact US</span>
 
           </Link>
+          <Link href="/joinus" className="text-[#ffee32] hover:text-[#ffd100] cursor-pointer decoration-[#ba181b] text-base font-semibold text-gray-900">
+            <span className='text-[#ffee32] hover:text-[#ffd100]  underline-animate cursor-pointer decoration-[#ba181b]'>Join US</span>
+
+          </Link>
         </PopoverGroup>
 
       </nav>
@@ -437,6 +441,12 @@ export default function Navbar() {
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Contact US
+                </Link>
+                <Link
+                  href="\joinus"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >
+                  Join US
                 </Link>
 
 

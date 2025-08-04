@@ -9,7 +9,7 @@ export default function Requestcard () {
       <p className="mb-4 text-gray-500">
         Toll-Free Number: 
         {/* <strong>(+91)</strong> */}
-        . Our team will reach out to you soon.
+         Our team will reach out to you soon.
       </p>
     </div>
   

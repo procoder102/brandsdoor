@@ -9,7 +9,7 @@ export default function Design() {
   const designDevlopment = [
     {title:'Static Website Design & Devlopment',
     body:'We believe every customer is different and has different needs, either they own a startup company or a well established business. At thebrandsdoor our Job is to identify...',
-    url:'/',
+    url:'/design/static-websites',
     linkName:'Learn More'
   },
     {title:'Dynamic Websites',

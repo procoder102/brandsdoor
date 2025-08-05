@@ -14,9 +14,9 @@ import Requestcard from '@/components/Requestcard/page'
 const Joinus = () => {
 
     const jobposts = [
-        { icon: Websitedevlopment, Vacancies: 16, title: 'Web Development', Desctiption: 'Full-Stack Developer, Front-End Developer, Back-End Developer.', link: '/joinus/apply' },
-        { icon: Design, Vacancies: 16, title: 'Web Development', Desctiption: 'Full-Stack Developer, Front-End Developer, Back-End Developer.', link: '/joinus/apply' },
-        { icon: Crative, Vacancies: 16, title: 'Web Development', Desctiption: 'Full-Stack Developer, Front-End Developer, Back-End Developer.', link: '/joinus/apply' },
+        { icon: Websitedevlopment, Vacancies: 16,Exprience:3, title: 'Web Development', Skills: 'Full-Stack Developer, Front-End Developer, Back-End Developer.',Desctiption:'', link: '/joinus/apply' },
+        { icon: Design, Vacancies: 16,Exprience:3, title: 'Web Development', Skills: 'Full-Stack Developer, Front-End Developer, Back-End Developer.',Desctiption:'', link: '/joinus/apply' },
+        { icon: Crative, Vacancies: 16,Exprience:3, title: 'Web Development', Skills: 'Full-Stack Developer, Front-End Developer, Back-End Developer.',Desctiption:'', link: '/joinus/apply' },
     ]
     return (
         <section className='pt-20'>

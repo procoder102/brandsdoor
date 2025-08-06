@@ -5,7 +5,6 @@ import img360 from '../../Images/360.png'
 import { CiPhone } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 import { Inter,Ubuntu } from 'next/font/google';
-// import nodemailer from 'nodemailer';
 import { useState } from 'react';
 
 

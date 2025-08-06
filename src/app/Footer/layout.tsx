@@ -17,14 +17,14 @@ export default function Footer() {
             <Image className='mx-auto w-50' src={Logo} alt='logo' />
                         <p className='text-white  text-start'>The Brands Door now has a position of created provision and is perfectly prepared to adjust to the new improvements that are being offered each day.</p>
         </div>
-        <div className='w-full md:w-60 lg:w-50 flex flex-col justify-evenly  text-center'>
-            <h1 className='text-[#ffee32] sm:text-xl font-bold  text-xl'>Find Us</h1>
-            <p className='text-white sm:text-xl font-thin text-lg '>Brands Door</p>
-            <p className='text-white sm:text-xl font-thin  '>Rise Shoplex, N-05, Second floor, Sector Techzone 4, Greater Noida West-201306</p>
+        <div className='w-full md:w-60 lg:w-50 flex flex-col justify-evenly  '>
+            <h1 className='text-[#ffee32] sm:text-xl font-bold  text-xl text-center'>Find Us</h1>
+            <p className='text-white sm:text-xl font-thin text-lg  text-center'>Brands Door</p>
+            <p className='text-white text-center font-thin'>SF 29, Rise Shoplex, N-05, Second floor, Sector Techzone 4, Greater Noida West-201306</p>
         </div>
         <div className='w-full md:w-60 lg:w-60 p-0 md:p-5 flex flex-col justify-between'>
             <h1 className='text-[#ffee32] sm:text-xl font-bold  text-xl text-center'>Connect With Us</h1>
-            {/* <p className='text-white sm:text-xl text-center  '>+91-9818752056 <br /> +91-9718358080 <br /> info@thebrandsdoor.com</p> */}
+            <p className='text-white sm:text-xl text-center  '>+91-9718048608 <br /> info@thebrandsdoor.com</p>
             <div className='flex justify-evenly lg:justify-between '>
             <CiFacebook className='text-white sm:text-xl' />
             <FaTwitter className='text-white sm:text-xl' />

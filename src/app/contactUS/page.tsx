@@ -83,7 +83,7 @@ export default function Contact() {
                 <h1 className='text-2xl font-bold text-center dark:text-white'>For Sale</h1>
                 <div className='flex'>
                     <CiPhone className='mt-1 font-bold dark:text-[#fefde7]' />
-                    <p className='mx-2 text-center dark:text-[#fefde7]'>+91 9718048608 </p>
+                    <p className='mx-2 text-center dark:text-[#fefde7]'>+91 9266901599 </p>
                 </div>
                 <div className='flex'>
                     <CiMail className='mt-1 dark:text-[#fefde7]' /><br />
